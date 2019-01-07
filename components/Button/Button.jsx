@@ -13,11 +13,8 @@ const sizes = {
 const types = {
   primary: "primary",
   default: "default",
-  warning: "warning",
-  success: "success",
-  error: "error",
-  info: "info",
-  danger: "danger"
+  danger: "danger",
+  dashed: "dashed"
 };
 
 const htmlTypes = {

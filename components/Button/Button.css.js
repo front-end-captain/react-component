@@ -1,5 +1,10 @@
 import styled from "styled-components";
-import { primaryColor } from "./../_style/vars.js";
+import {
+  primaryColor,
+  dangerColor,
+  defaultBorderColor,
+  fontSize
+} from "./../_style/vars.js";
 
 const ButtonWrapper = styled.button`
   line-height: 1.499;
@@ -13,7 +18,7 @@ const ButtonWrapper = styled.button`
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 0 15px;
-  font-size: 14px;
+  font-size: ${fontSize};
   border-radius: 4px;
   height: 32px;
   user-select: none;
@@ -22,12 +27,12 @@ const ButtonWrapper = styled.button`
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
   color: rgba(0, 0, 0, 0.65);
   background-color: #fff;
-  border-color: #d9d9d9;
+  border-color: ${defaultBorderColor};
 
   &.${props => props.prefixCls}-danger {
-    color: #f5222d;
+    color: ${dangerColor};
     background-color: #f5f5f5;
-    border-color: #d9d9d9;
+    border-color: ${defaultBorderColor};
   }
 
   &.${props => props.prefixCls}-danger:hover {
@@ -50,11 +55,24 @@ const ButtonWrapper = styled.button`
     border-color: #40a9ff;
   }
 
+  &.${props => props.prefixCls}-dashed {
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    border-color: ${defaultBorderColor};
+    border-style: dashed;
+  }
+
+  &.${props => props.prefixCls}-dashed:hover {
+    color: #40a9ff;
+    background-color: #fff;
+    border-color: #40a9ff;
+  }
+
   &.${props => props.prefixCls}[disabled] {
     cursor: not-allowed;
     color: rgba(0, 0, 0, 0.25);
     background-color: #f5f5f5;
-    border-color: #d9d9d9;
+    border-color: ${defaultBorderColor};
     text-shadow: none;
     box-shadow: none;
   }

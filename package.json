@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development start-storybook -p 8080 -c .storybook",
-    "lint": "eslint --ext .js,.jsx src",
+    "lint": "eslint --ext .js,.jsx components",
     "pre-commit": "npm run lint-staged",
     "lint-staged": "lint-staged",
-    "prettier": "prettier --write ./src/**/**/**/*"
+    "prettier": "prettier --write ./components/**/**/**/*"
   },
   "lint-staged": {
     "**/*.{js,jsx}": [

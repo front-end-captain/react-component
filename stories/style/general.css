@@ -1,0 +1,14 @@
+.button-example {
+  display: flex;
+  flex-direction: column;
+  padding-left: 22px;
+}
+
+.demo-container-right {
+  width: 45%;
+}
+
+[class*="demo-item-container-"] .viking-btn {
+  margin-right: 8px;
+  margin-bottom: 10px;
+}

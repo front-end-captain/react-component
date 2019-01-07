@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export declare type ButtonType = "default" | "primary" | "ghost" | "dashed" | "danger";
+export declare type ButtonType = "default" | "primary" | "dashed" | "danger";
 export declare type ButtonSize = "large" | "default" | "small";
 export declare type ButtonHtmlType = "button" | "submit" | "reset";
 
