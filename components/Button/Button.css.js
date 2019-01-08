@@ -1,10 +1,5 @@
 import styled from "styled-components";
-import {
-  primaryColor,
-  dangerColor,
-  defaultBorderColor,
-  fontSize
-} from "./../_style/vars.js";
+import { primaryColor, dangerColor, defaultBorderColor, fontSize } from "./../_style/vars.js";
 
 const ButtonWrapper = styled.button`
   line-height: 1.499;
@@ -29,19 +24,19 @@ const ButtonWrapper = styled.button`
   background-color: #fff;
   border-color: ${defaultBorderColor};
 
-  &.${props => props.prefixCls}-danger {
+  &.${(props) => props.prefixCls}-danger {
     color: ${dangerColor};
     background-color: #f5f5f5;
     border-color: ${defaultBorderColor};
   }
 
-  &.${props => props.prefixCls}-danger:hover {
+  &.${(props) => props.prefixCls}-danger:hover {
     color: #fff;
     background-color: #ff4d4f;
     border-color: #ff4d4f;
   }
 
-  &.${props => props.prefixCls}-primary {
+  &.${(props) => props.prefixCls}-primary {
     color: #fff;
     background-color: ${primaryColor};
     border-color: #1890ff;
@@ -49,26 +44,26 @@ const ButtonWrapper = styled.button`
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
   }
 
-  &.${props => props.prefixCls}-primary:hover {
+  &.${(props) => props.prefixCls}-primary:hover {
     color: #fff;
     background-color: #40a9ff;
     border-color: #40a9ff;
   }
 
-  &.${props => props.prefixCls}-dashed {
+  &.${(props) => props.prefixCls}-dashed {
     color: rgba(0, 0, 0, 0.65);
     background-color: #fff;
     border-color: ${defaultBorderColor};
     border-style: dashed;
   }
 
-  &.${props => props.prefixCls}-dashed:hover {
+  &.${(props) => props.prefixCls}-dashed:hover {
     color: #40a9ff;
     background-color: #fff;
     border-color: #40a9ff;
   }
 
-  &.${props => props.prefixCls}[disabled] {
+  &.${(props) => props.prefixCls}[disabled] {
     cursor: not-allowed;
     color: rgba(0, 0, 0, 0.25);
     background-color: #f5f5f5;

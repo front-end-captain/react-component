@@ -7,20 +7,20 @@ import ButtonWrapper from "./Button.css.js";
 const sizes = {
   small: "small",
   default: "default",
-  large: "large"
+  large: "large",
 };
 
 const types = {
   primary: "primary",
   default: "default",
   danger: "danger",
-  dashed: "dashed"
+  dashed: "dashed",
 };
 
 const htmlTypes = {
   button: "button",
   submit: "submit",
-  reset: "reset"
+  reset: "reset",
 };
 
 const Button = ({
@@ -47,8 +47,8 @@ const Button = ({
       [`${prefixCls}-normal`]: type === types.default,
       [`${prefixCls}-disabled`]: disabled,
       [`${prefixCls}-loading`]: loading,
-      [`${prefixCls}-size-${size}`]: size !== sizes.default
-    })
+      [`${prefixCls}-size-${size}`]: size !== sizes.default,
+    }),
   };
   return <ButtonWrapper {...baseProps}>{children || "Button"}</ButtonWrapper>;
 };
@@ -59,7 +59,7 @@ Button.defaultProps = {
   type: types.default,
   size: sizes.default,
   htmlType: htmlTypes.button,
-  disabled: false
+  disabled: false,
 };
 
 Button.propTypes = {
@@ -68,7 +68,7 @@ Button.propTypes = {
   type: PropTypes.oneOf(Object.values(types)),
   size: PropTypes.oneOf(Object.values(sizes)),
   htmlType: PropTypes.oneOf(Object.values(htmlTypes)),
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
 };
 
 export default Button;
