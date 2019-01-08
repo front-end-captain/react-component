@@ -1,9 +1,8 @@
 .example-card-wrapper {
-  width: 100%;
-  height: 100%;
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .example-card-wrapper .example-card-content {

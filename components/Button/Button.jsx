@@ -2,26 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
+import { LoadingIcon } from "./../Icon/index.jsx";
+
 import ButtonWrapper from "./Button.css.js";
 
-const sizes = {
-  small: "small",
-  default: "default",
-  large: "large",
-};
+const sizes = { small: "small", default: "default", large: "large" };
 
-const types = {
-  primary: "primary",
-  default: "default",
-  danger: "danger",
-  dashed: "dashed",
-};
+const types = { primary: "primary", default: "default", danger: "danger", dashed: "dashed" };
 
-const htmlTypes = {
-  button: "button",
-  submit: "submit",
-  reset: "reset",
-};
+const htmlTypes = { button: "button", submit: "submit", reset: "reset" };
 
 const Button = ({
   children,
@@ -33,6 +22,7 @@ const Button = ({
   type,
   size,
   prefixCls,
+  block,
   ...resetProps
 }) => {
   const isDisabled = disabled || loading ? { disabled: true } : { onClick };
@@ -48,18 +38,25 @@ const Button = ({
       [`${prefixCls}-disabled`]: disabled,
       [`${prefixCls}-loading`]: loading,
       [`${prefixCls}-size-${size}`]: size !== sizes.default,
+      [`${prefixCls}-block`]: block,
     }),
   };
-  return <ButtonWrapper {...baseProps}>{children || "Button"}</ButtonWrapper>;
+  return (
+    <ButtonWrapper {...baseProps}>
+      {loading && <LoadingIcon className="sky-loading" />}
+      <span>{children || "Button"}</span>
+    </ButtonWrapper>
+  );
 };
 
 Button.defaultProps = {
-  prefixCls: "viking-btn",
+  prefixCls: "sky-btn",
   loading: false,
   type: types.default,
   size: sizes.default,
   htmlType: htmlTypes.button,
   disabled: false,
+  block: false,
 };
 
 Button.propTypes = {
@@ -69,6 +66,7 @@ Button.propTypes = {
   size: PropTypes.oneOf(Object.values(sizes)),
   htmlType: PropTypes.oneOf(Object.values(htmlTypes)),
   disabled: PropTypes.bool,
+  block: PropTypes.bool,
 };
 
 export default Button;

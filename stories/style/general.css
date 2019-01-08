@@ -1,14 +1,27 @@
 .button-example {
   display: flex;
   flex-direction: column;
-  padding-left: 22px;
+  padding: 0 22px;
 }
 
+.demo-container {
+  overflow: hidden;
+}
+
+.demo-container-left,
 .demo-container-right {
   width: 45%;
 }
 
-[class*="demo-item-container-"] .viking-btn {
+.demo-container-left {
+  float: left;
+}
+
+.demo-container-right {
+  float: right;
+}
+
+[class*="demo-item-container-"] .sky-btn {
   margin-right: 8px;
   margin-bottom: 10px;
 }

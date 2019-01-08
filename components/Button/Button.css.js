@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { primaryColor, dangerColor, defaultBorderColor, fontSize } from "./../_style/vars.js";
+import { primaryColor, dangerColor, defaultBorderColor, linkColor } from "./../_style/vars.js";
+import { skySpin } from "./../_style/animate.js";
 
 const ButtonWrapper = styled.button`
   line-height: 1.499;
@@ -13,7 +14,7 @@ const ButtonWrapper = styled.button`
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 0 15px;
-  font-size: ${fontSize};
+  font-size: 14px;
   border-radius: 4px;
   height: 32px;
   user-select: none;
@@ -23,6 +24,11 @@ const ButtonWrapper = styled.button`
   color: rgba(0, 0, 0, 0.65);
   background-color: #fff;
   border-color: ${defaultBorderColor};
+
+  &.${(props) => props.prefixCls}-default:hover {
+    color: ${linkColor};
+    border-color: ${linkColor};
+  }
 
   &.${(props) => props.prefixCls}-danger {
     color: ${dangerColor};
@@ -39,15 +45,15 @@ const ButtonWrapper = styled.button`
   &.${(props) => props.prefixCls}-primary {
     color: #fff;
     background-color: ${primaryColor};
-    border-color: #1890ff;
+    border-color: ${defaultBorderColor};
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
   }
 
   &.${(props) => props.prefixCls}-primary:hover {
     color: #fff;
-    background-color: #40a9ff;
-    border-color: #40a9ff;
+    background-color: ${linkColor};
+    border-color: ${linkColor};
   }
 
   &.${(props) => props.prefixCls}-dashed {
@@ -58,18 +64,48 @@ const ButtonWrapper = styled.button`
   }
 
   &.${(props) => props.prefixCls}-dashed:hover {
-    color: #40a9ff;
+    color: ${linkColor};
     background-color: #fff;
-    border-color: #40a9ff;
+    border-color: ${linkColor};
   }
 
-  &.${(props) => props.prefixCls}[disabled] {
+  &.${(props) => props.prefixCls}-disabled {
     cursor: not-allowed;
     color: rgba(0, 0, 0, 0.25);
     background-color: #f5f5f5;
     border-color: ${defaultBorderColor};
     text-shadow: none;
     box-shadow: none;
+  }
+
+  &.${(props) => props.prefixCls}-size-large {
+    padding: 0 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    height: 40px;
+  }
+
+  &.${(props) => props.prefixCls}-size-small {
+    padding: 0 7px;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 24px;
+  }
+
+  &.${(props) => props.prefixCls}-loading {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  &.${(props) => props.prefixCls}-loading .sky-loading {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -3px 10px 0 0;
+    animation: ${skySpin} 1.5s linear infinite;
+  }
+
+  &.${(props) => props.prefixCls}-block {
+    width: 100%;
   }
 `;
 
