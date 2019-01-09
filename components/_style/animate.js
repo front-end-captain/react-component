@@ -33,3 +33,27 @@ export const skyFadeIn = keyframes`
     transform: scale(1) translate3d(0, 0, 0);
   }
 `;
+
+export const skySlideDown = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(0, -15px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
+
+export const skySlideDownOut = keyframes`
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -15px, 0);
+  }
+`;

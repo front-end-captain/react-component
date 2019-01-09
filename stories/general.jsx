@@ -3,6 +3,7 @@ import { storiesOf } from "@storybook/react";
 import Button from "../components/Button/index.js";
 import ExampleCard from "./components/ExampleCard/index.jsx";
 
+import "./style/common.css";
 import "./style/general.css";
 
 storiesOf("通用", module).add("Button", () => {

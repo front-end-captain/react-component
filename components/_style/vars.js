@@ -7,4 +7,6 @@ export const dangerColor = "#f5222d";
 export const linkColor = "#1890ff";
 export const fontSize = "14px";
 
+export const defaultBoxShadow = "0 4px 22px 0 rgba(15, 35, 95, 0.12)";
+
 export const defaultBorderColor = "#d9d9d9";

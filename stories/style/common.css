@@ -1,0 +1,22 @@
+.example-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 22px;
+}
+
+.demo-container {
+  overflow: hidden;
+}
+
+.demo-container-left,
+.demo-container-right {
+  width: 45%;
+}
+
+.demo-container-left {
+  float: left;
+}
+
+.demo-container-right {
+  float: right;
+}
