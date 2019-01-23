@@ -11,6 +11,7 @@ class Tooltip extends React.Component {
     prefixCls: "sky-tooltip",
     placement: "top",
     onVisibleChange: () => {},
+    trigger: "hover",
   };
 
   static propTypes = {
@@ -18,7 +19,10 @@ class Tooltip extends React.Component {
     className: PropTypes.string,
     placement: PropTypes.oneOf(["top", "right", "left", "bottom"]),
     onVisibleChange: PropTypes.func,
+    trigger: PropTypes.oneOf(["hover", "click"]),
   };
+
+  static triggerTypes = { hover: "hover", click: "click" };
 
   OPEN_LOCK = false;
 
@@ -28,7 +32,7 @@ class Tooltip extends React.Component {
     super(props);
 
     this.state = {
-      visible: props.visible || false,
+      visible: null,
       left: 0,
       top: 0,
     };
@@ -42,6 +46,11 @@ class Tooltip extends React.Component {
     this.getWrapperBounding = this.getWrapperBounding.bind(this);
     this.setWrapperBounding = this.setWrapperBounding.bind(this);
     this.resetWrapperPosition = this.resetWrapperPosition.bind(this);
+    this.onClickOutSideHandle = this.onClickOutSideHandle.bind(this);
+  }
+
+  componentDidMount() {
+    document.addEventListener("click", this.onClickOutSideHandle);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -54,6 +63,29 @@ class Tooltip extends React.Component {
         this.CLOSE_LOCK = !nextProps.visible;
       },
     );
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("click", this.onClickOutSideHandle);
+  }
+
+  onClickOutSideHandle(event) {
+    event.stopPropagation();
+
+    const { visible } = this.state;
+    const { onVisibleChange } = this.props;
+
+    if (
+      visible &&
+      !this.wrapper.current.contains(event.target) &&
+      !this.overlayContent.current.contains(event.target)
+    ) {
+      this.setState({ visible: false }, () => {
+        this.OPEN_LOCK = false;
+        this.CLOSE_LOCK = true;
+        onVisibleChange(false);
+      });
+    }
   }
 
   onOpenTooltip() {
@@ -143,6 +175,7 @@ class Tooltip extends React.Component {
       placement,
       getPopupContainer,
       overlayClassName,
+      trigger,
     } = this.props;
 
     const contentClassNames = classNames(
@@ -152,15 +185,21 @@ class Tooltip extends React.Component {
       {
         [`${prefixCls}-hide`]: !visible,
         [`${prefixCls}-show`]: visible,
+        [`${prefixCls}-not-display`]: this.trigger.current === null,
       },
     );
+
+    const isHover = trigger === Tooltip.triggerTypes.hover;
+
+    const triggerEvents = isHover
+      ? { onMouseEnter: this.onOpenTooltip, onMouseLeave: this.onCloseTooltip }
+      : { onClick: this.onOpenTooltip };
 
     return (
       <TooltipWrapper
         className={classNames(prefixCls, className)}
         ref={this.wrapper}
-        onMouseEnter={this.onOpenTooltip}
-        onMouseLeave={this.onCloseTooltip}
+        {...triggerEvents}
       >
         <TooltipPortal onChange={this.resetWrapperPosition} getPopupContainer={getPopupContainer}>
           <OverlayContent

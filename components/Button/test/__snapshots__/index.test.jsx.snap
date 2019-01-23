@@ -3,7 +3,7 @@
 exports[`<Button/> should render a <Button/> components 1`] = `
 <div>
   <button
-    class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 fSHppi"
+    class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
     type="button"
   >
     <span>
@@ -11,7 +11,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="sky-btn sky-btn-primary Buttoncss__ButtonWrapper-k9s1tq-0 fSHppi"
+    class="sky-btn sky-btn-primary Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
     type="button"
   >
     <span>
@@ -19,7 +19,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="sky-btn sky-btn-dashed Buttoncss__ButtonWrapper-k9s1tq-0 fSHppi"
+    class="sky-btn sky-btn-dashed Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
     type="button"
   >
     <span>
@@ -27,7 +27,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="sky-btn sky-btn-danger Buttoncss__ButtonWrapper-k9s1tq-0 fSHppi"
+    class="sky-btn sky-btn-danger Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
     type="button"
   >
     <span>
@@ -35,7 +35,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="sky-btn sky-btn-normal sky-btn-disabled Buttoncss__ButtonWrapper-k9s1tq-0 fSHppi"
+    class="sky-btn sky-btn-normal sky-btn-disabled Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
     disabled=""
     type="button"
   >
@@ -44,7 +44,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="sky-btn sky-btn-default sky-btn-normal sky-btn-loading Buttoncss__ButtonWrapper-k9s1tq-0 fSHppi"
+    class="sky-btn sky-btn-default sky-btn-normal sky-btn-loading Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
     disabled=""
     type="button"
   >
@@ -113,7 +113,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="sky-btn sky-btn-default sky-btn-normal sky-btn-block Buttoncss__ButtonWrapper-k9s1tq-0 fSHppi"
+    class="sky-btn sky-btn-default sky-btn-normal sky-btn-block Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
     type="button"
   >
     <span>
@@ -121,7 +121,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="sky-btn sky-btn-primary sky-btn-size-large Buttoncss__ButtonWrapper-k9s1tq-0 fSHppi"
+    class="sky-btn sky-btn-primary sky-btn-size-large Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
     type="button"
   >
     <span>
@@ -129,7 +129,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="sky-btn sky-btn-primary Buttoncss__ButtonWrapper-k9s1tq-0 fSHppi"
+    class="sky-btn sky-btn-primary Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
     type="button"
   >
     <span>
@@ -137,7 +137,7 @@ exports[`<Button/> should render a <Button/> components 1`] = `
     </span>
   </button>
   <button
-    class="sky-btn sky-btn-danger sky-btn-size-small Buttoncss__ButtonWrapper-k9s1tq-0 fSHppi"
+    class="sky-btn sky-btn-danger sky-btn-size-small Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
     type="button"
   >
     <span>

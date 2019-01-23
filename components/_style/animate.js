@@ -34,7 +34,7 @@ export const skyFadeIn = keyframes`
   }
 `;
 
-export const skySlideDown = keyframes`
+export const skySlideBottom = keyframes`
   from {
     opacity: 0;
     transform: translate3d(0, -15px, 0);
@@ -46,7 +46,7 @@ export const skySlideDown = keyframes`
   }
 `;
 
-export const skySlideDownOut = keyframes`
+export const skySlideBottomOut = keyframes`
   from {
     opacity: 1;
     transform: translate3d(0, 0, 0);
@@ -55,5 +55,77 @@ export const skySlideDownOut = keyframes`
   to {
     opacity: 0;
     transform: translate3d(0, -15px, 0);
+  }
+`;
+
+export const skySliderRight = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(15px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
+
+export const skySliderRightOut = keyframes`
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(15px, 0, 0);
+  }
+`;
+
+export const skySliderLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(-15px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
+
+export const skySliderLeftOut = keyframes`
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-15px, 0, 0);
+  }
+`;
+
+export const skySliderUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(0, 15px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
+
+export const skySliderUpOut = keyframes`
+  from {
+    opacity: 1;
+    transform: translate3d(0, 15px, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
   }
 `;

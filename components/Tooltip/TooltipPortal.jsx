@@ -20,7 +20,6 @@ class TooltipPortal extends React.Component {
   componentDidMount() {
     const { onChange } = this.props;
     this.wrapperContainer.appendChild(this.wrapperNode);
-    this.forceUpdate();
     if (onChange) {
       onChange();
     }

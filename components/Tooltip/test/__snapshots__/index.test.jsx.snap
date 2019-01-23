@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip should find \`.sky-tooltip\` classnames 1`] = `
+<Tooltipcss__TooltipWrapper
+  className="sky-tooltip"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <TooltipPortal
+    getPopupContainer={[Function]}
+    onChange={[Function]}
+  >
+    <Tooltipcss__OverlayContent
+      className="sky-tooltip-overlay sky-tooltip-position-top sky-tooltip-hide sky-tooltip-not-display"
+      prefixCls="sky-tooltip"
+      style={
+        Object {
+          "left": 0,
+          "top": 0,
+        }
+      }
+    >
+      prompt text
+    </Tooltipcss__OverlayContent>
+  </TooltipPortal>
+  <Tooltipcss__TriggerWrapper>
+    put the mouse on this
+  </Tooltipcss__TriggerWrapper>
+</Tooltipcss__TooltipWrapper>
+`;
+
+exports[`Tooltip should render a <Tooltip> component 1`] = `
+<div>
+  <div
+    class="sky-tooltip Tooltipcss__TooltipWrapper-be2ocw-0 hKKFDA"
+  >
+    <div
+      class="sky-tooltip-overlay sky-tooltip-position-top sky-tooltip-hide sky-tooltip-not-display Tooltipcss__OverlayContent-be2ocw-1 craHJN"
+      style="left:0;top:0"
+    >
+      prompt text
+    </div>
+    <div
+      class="Tooltipcss__TriggerWrapper-be2ocw-2 jUvocl"
+    >
+      put the mouse on this
+    </div>
+  </div>
+  <div
+    class="sky-tooltip Tooltipcss__TooltipWrapper-be2ocw-0 hKKFDA"
+  >
+    <div
+      class="sky-tooltip-overlay sky-tooltip-position-top sky-tooltip-hide sky-tooltip-not-display Tooltipcss__OverlayContent-be2ocw-1 craHJN"
+      style="left:0;top:0"
+    >
+      prompt text
+    </div>
+    <div
+      class="Tooltipcss__TriggerWrapper-be2ocw-2 jUvocl"
+    >
+      <button
+        class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+        type="button"
+      >
+        <span>
+          top
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    class="sky-tooltip Tooltipcss__TooltipWrapper-be2ocw-0 hKKFDA"
+  >
+    <div
+      class="sky-tooltip-overlay sky-tooltip-position-right sky-tooltip-hide sky-tooltip-not-display Tooltipcss__OverlayContent-be2ocw-1 craHJN"
+      style="left:0;top:0"
+    >
+      prompt text
+    </div>
+    <div
+      class="Tooltipcss__TriggerWrapper-be2ocw-2 jUvocl"
+    >
+      <button
+        class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+        type="button"
+      >
+        <span>
+          right
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    class="sky-tooltip Tooltipcss__TooltipWrapper-be2ocw-0 hKKFDA"
+  >
+    <div
+      class="sky-tooltip-overlay sky-tooltip-position-bottom sky-tooltip-hide sky-tooltip-not-display Tooltipcss__OverlayContent-be2ocw-1 craHJN"
+      style="left:0;top:0"
+    >
+      prompt text
+    </div>
+    <div
+      class="Tooltipcss__TriggerWrapper-be2ocw-2 jUvocl"
+    >
+      <button
+        class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+        type="button"
+      >
+        <span>
+          bottom
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    class="sky-tooltip Tooltipcss__TooltipWrapper-be2ocw-0 hKKFDA"
+  >
+    <div
+      class="sky-tooltip-overlay sky-tooltip-position-left sky-tooltip-hide sky-tooltip-not-display Tooltipcss__OverlayContent-be2ocw-1 craHJN"
+      style="left:0;top:0"
+    >
+      prompt text
+    </div>
+    <div
+      class="Tooltipcss__TriggerWrapper-be2ocw-2 jUvocl"
+    >
+      <button
+        class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+        type="button"
+      >
+        <span>
+          left
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tooltip should render specific positions 1`] = `
+<div>
+  <Tooltip
+    onVisibleChange={[Function]}
+    placement="top"
+    prefixCls="sky-tooltip"
+    title="prompt text"
+    trigger="hover"
+  >
+    <Button
+      block={false}
+      disabled={false}
+      htmlType="button"
+      loading={false}
+      prefixCls="sky-btn"
+      size="default"
+      type="default"
+    >
+      top
+    </Button>
+  </Tooltip>
+  <Tooltip
+    onVisibleChange={[Function]}
+    placement="right"
+    prefixCls="sky-tooltip"
+    title="prompt text"
+    trigger="hover"
+  >
+    <Button
+      block={false}
+      disabled={false}
+      htmlType="button"
+      loading={false}
+      prefixCls="sky-btn"
+      size="default"
+      type="default"
+    >
+      right
+    </Button>
+  </Tooltip>
+  <Tooltip
+    onVisibleChange={[Function]}
+    placement="bottom"
+    prefixCls="sky-tooltip"
+    title="prompt text"
+    trigger="hover"
+  >
+    <Button
+      block={false}
+      disabled={false}
+      htmlType="button"
+      loading={false}
+      prefixCls="sky-btn"
+      size="default"
+      type="default"
+    >
+      bottom
+    </Button>
+  </Tooltip>
+  <Tooltip
+    onVisibleChange={[Function]}
+    placement="left"
+    prefixCls="sky-tooltip"
+    title="prompt text"
+    trigger="hover"
+  >
+    <Button
+      block={false}
+      disabled={false}
+      htmlType="button"
+      loading={false}
+      prefixCls="sky-btn"
+      size="default"
+      type="default"
+    >
+      left
+    </Button>
+  </Tooltip>
+</div>
+`;
