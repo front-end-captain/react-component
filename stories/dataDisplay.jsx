@@ -21,7 +21,7 @@ storiesOf("数据展示", module).add("Tooltip", () => {
               title="基本使用"
               description="最简单的用法。"
             >
-              <Tooltip title="prompt text" trigger="click">
+              <Tooltip title="prompt text">
                 <span>Tooltip will show when mouse enter.</span>
               </Tooltip>
             </ExampleCard>
