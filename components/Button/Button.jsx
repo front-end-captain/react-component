@@ -59,7 +59,7 @@ Button.defaultProps = {
   block: false,
 };
 
-Button.propTypes = {
+export const ButtonPropTypes = {
   prefixCls: PropTypes.string,
   loading: PropTypes.bool,
   type: PropTypes.oneOf(Object.values(types)),
@@ -68,5 +68,7 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   block: PropTypes.bool,
 };
+
+Button.propTypes = ButtonPropTypes;
 
 export default Button;

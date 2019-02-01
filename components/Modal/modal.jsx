@@ -6,6 +6,7 @@ import classNames from "classnames";
 import confirm from "./confirm.jsx";
 import Button from "./../Button/index.js";
 import { CloseIcon, InfoIcon, SuccessIcon, ErrorIcon, WarningIcon } from "./../Icon/index.jsx";
+import { ButtonPropTypes } from "./../Button/Button.jsx";
 
 import { MaskWrapper, Wrapper, ModalWrapper } from "./modal.css.js";
 
@@ -53,8 +54,8 @@ class Modal extends React.Component {
     zIndex: PropTypes.number,
     mask: PropTypes.bool,
     centered: PropTypes.bool,
-    okButtonProps: PropTypes.objectOf(PropTypes.string),
-    cancelButtonProps: PropTypes.objectOf(PropTypes.string),
+    okButtonProps: PropTypes.shape(ButtonPropTypes),
+    cancelButtonProps: PropTypes.shape(ButtonPropTypes),
   };
 
   static getDerivedStateFromProps({ visible, destroyOnClose }, { destroy, firstMount }) {
