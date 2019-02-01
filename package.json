@@ -11,7 +11,7 @@
     "lint-staged": "lint-staged",
     "test": "jest --config jest.config.js",
     "test:update": "jest -u",
-    "prettier": "prettier --write ./components/**/*.js ./components/**/*.jsx"
+    "format": "prettier --write ./components/**/*.js ./components/**/*.jsx"
   },
   "lint-staged": {
     "**/*.{js,jsx}": [
