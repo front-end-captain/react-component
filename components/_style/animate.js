@@ -129,3 +129,27 @@ export const skySliderUpOut = keyframes`
     transform: translate3d(0, 0, 0);
   }
 `;
+
+export const skyMaskFadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+`;
+
+export const skyMaskFadeOut = keyframes`
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+`;
