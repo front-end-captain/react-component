@@ -153,3 +153,25 @@ export const skyMaskFadeOut = keyframes`
     transform: translate3d(0, 0, 0);
   }
 `;
+
+export const skyMessageFadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(16px);
+  }
+`;
+
+export const skyMessageFadeOut = keyframes`
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+`;
