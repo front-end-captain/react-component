@@ -6,6 +6,8 @@ describe("<Message />", () => {
 
     message.info("whatever");
 
-    expect(document.querySelectorAll(".sky-message")[0].getBoundingClientRect().top).toBe(100);
+    setTimeout(() => {
+      expect(document.querySelectorAll(".sky-message")[0].getBoundingClientRect().top).toBe(100);
+    }, 0);
   });
 });
