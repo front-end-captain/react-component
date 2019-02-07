@@ -5,7 +5,12 @@ import message from "../components/Message/index.js";
 import ExampleCard from "./components/ExampleCard/index.jsx";
 import BasicModal from "./components/BasicModalUsage/BasicModal.jsx";
 import ConfirmModal from "./components/BasicModalUsage/ConfirmModal.jsx";
+
 import Button from "./../components/Button/index.js";
+import Progress from "./../components/Progress/index.js";
+
+import DynamicLineProgress from "./components/ProgressUsage/dynamicLineProgress.jsx";
+import DynamicCircleProgress from "./components/ProgressUsage/dynamicCircleProgress.jsx";
 
 import "./style/common.css";
 
@@ -94,6 +99,100 @@ storiesOf("反馈", module)
                 description="自定义时长 10s，默认时长为 3s。"
               >
                 <Button onClick={customDuration}>Customized display duration</Button>
+              </ExampleCard>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  })
+  .add("Progress", () => {
+    return (
+      <div className="modal-example example-wrapper">
+        <div className="modal-example-header example-header">
+          <h1>Progress</h1>
+        </div>
+        <div className="modal-example-demo demo-wrapper">
+          <h3>示例</h3>
+          <div className="demo-container">
+            <div className="demo-container-left">
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="基本使用"
+                description="最简单的用法。"
+              >
+                <Progress percent={30} wrapStyle={{ marginBottom: "15px" }} />
+                <Progress percent={50} status="exception" wrapStyle={{ marginBottom: "15px" }} />
+                <Progress percent={100} status="success" wrapStyle={{ marginBottom: "15px" }} />
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="动态展示"
+                description="会动的进度条才是好进度条。"
+              >
+                <DynamicLineProgress />
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="自定义内容模板"
+                description="使用 `format` 函数来自定义内容提示信息"
+              >
+                <Progress
+                  percent={30}
+                  format={(percent) => `${percent} Days`}
+                  wrapStyle={{ marginBottom: "15px" }}
+                />
+                <Progress type="circle" percent={100} format={() => "Done"} />
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="圆角/方角边缘"
+                description="通过设定 `linecap='square|round'` 可以调整进度条边缘的形状。"
+              >
+                <Progress
+                  type="circle"
+                  percent={75}
+                  linecap="square"
+                  format={(percent) => `${percent} Days`}
+                  wrapStyle={{ marginRight: "15px" }}
+                />
+                <Progress type="dashboard" percent={40} linecap="square" />
+                <Progress percent={55} linecap="square" format={(percent) => `${percent}% Done`} />
+              </ExampleCard>
+            </div>
+            <div className="demo-container-right">
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="进度圈"
+                description="圆形的进度。"
+              >
+                <Progress type="circle" percent={30} wrapStyle={{ marginRight: "15px" }} />
+                <Progress
+                  type="circle"
+                  percent={50}
+                  status="exception"
+                  wrapStyle={{ marginRight: "15px" }}
+                />
+                <Progress
+                  type="circle"
+                  percent={100}
+                  status="success"
+                  wrapStyle={{ marginRight: "15px" }}
+                />
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="动态进度圈"
+                description="会动的进度条才是好进度条。"
+              >
+                <DynamicCircleProgress />
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="仪表盘"
+                description="通过设置 `type=dashboard`, 可以很方便地实现仪表盘样式的进度条。"
+              >
+                <Progress type="dashboard" percent={75} />
               </ExampleCard>
             </div>
           </div>

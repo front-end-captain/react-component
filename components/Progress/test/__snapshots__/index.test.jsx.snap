@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Progress /> should be render some <Progress /> components 1`] = `
+<div>
+  <div
+    class="sky-progress-line-wrapper sky-progress-line-normal progresscss__LineWrapper-qlii17-0 dJdwwr"
+  >
+    <svg
+      class="sky-progress-line"
+      preserveAspectRatio="none"
+      viewBox="0 0 100 1.5"
+    >
+      <path
+        class="sky-progress-line-trail"
+        d="M 0.75, 0.75 L 99.25, 0.75"
+        fill-opacity="0"
+        stroke="#f5f5f5"
+        stroke-linecap="round"
+        stroke-width="1.5"
+      />
+      <path
+        class="sky-progress-line-path"
+        d="M 0.75, 0.75 L 99.25, 0.75"
+        fill-opacity="0"
+        stroke="#f5f5f5"
+        stroke-linecap="round"
+        stroke-width="1.5"
+        style="stroke-dasharray:0px, 100px;stroke-dashoffset:0px;transition:stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear"
+      />
+    </svg>
+    <span
+      class="sky-progress-info"
+    >
+      0%
+    </span>
+  </div>
+  <div
+    class="sky-progress-circle-wrapper sky-progress-circle-normal progresscss__CircleWrapper-qlii17-1 fUyPWZ"
+  >
+    <svg
+      class="sky-progress-circle"
+      viewBox="0 0 100 100"
+    >
+      <path
+        class="sky-progress-circle-trail"
+        d="M 50,50 m 0,47.75
+     a 47.75,47.75 0 1 1 0,-95.5
+     a 47.75,47.75 0 1 1 0,95.5"
+        fill-opacity="0"
+        stroke="#f5f5f5"
+        stroke-linecap="round"
+        stroke-width="4.5"
+        style="stroke-dasharray:230.02209841782525px 300.02209841782525px;stroke-dashoffset:-35px;transition:stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s, stroke-width 0.06s ease 0.3s"
+      />
+      <path
+        class="sky-progress-circle-path"
+        d="M 50,50 m 0,47.75
+     a 47.75,47.75 0 1 1 0,-95.5
+     a 47.75,47.75 0 1 1 0,95.5"
+        fill-opacity="0"
+        stroke="#f5f5f5"
+        stroke-linecap="round"
+        stroke-width="0"
+        style="stroke-dasharray:0px 300.02209841782525px;stroke-dashoffset:-35px;transition:stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s, stroke-width 0.06s ease 0.3s"
+      />
+    </svg>
+    <span
+      class="sky-progress-info"
+    >
+      0%
+    </span>
+  </div>
+  <div
+    class="sky-progress-circle-wrapper sky-progress-circle-normal progresscss__CircleWrapper-qlii17-1 fUyPWZ"
+  >
+    <svg
+      class="sky-progress-circle"
+      viewBox="0 0 100 100"
+    >
+      <path
+        class="sky-progress-circle-trail"
+        d="M 50,50 m 0,-47.75
+     a 47.75,47.75 0 1 1 0,95.5
+     a 47.75,47.75 0 1 1 0,-95.5"
+        fill-opacity="0"
+        stroke="#f5f5f5"
+        stroke-linecap="round"
+        stroke-width="4.5"
+        style="stroke-dasharray:300.02209841782525px 300.02209841782525px;stroke-dashoffset:-0px;transition:stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s, stroke-width 0.06s ease 0.3s"
+      />
+      <path
+        class="sky-progress-circle-path"
+        d="M 50,50 m 0,-47.75
+     a 47.75,47.75 0 1 1 0,95.5
+     a 47.75,47.75 0 1 1 0,-95.5"
+        fill-opacity="0"
+        stroke="#f5f5f5"
+        stroke-linecap="round"
+        stroke-width="0"
+        style="stroke-dasharray:0px 300.02209841782525px;stroke-dashoffset:-0px;transition:stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s, stroke-width 0.06s ease 0.3s"
+      />
+    </svg>
+    <span
+      class="sky-progress-info"
+    >
+      0%
+    </span>
+  </div>
+  <div
+    class="sky-progress-line-wrapper sky-progress-line-success progresscss__LineWrapper-qlii17-0 dJdwwr"
+  >
+    <svg
+      class="sky-progress-line"
+      preserveAspectRatio="none"
+      viewBox="0 0 100 1.5"
+    >
+      <path
+        class="sky-progress-line-trail"
+        d="M 0.75, 0.75 L 99.25, 0.75"
+        fill-opacity="0"
+        stroke="#f5f5f5"
+        stroke-linecap="round"
+        stroke-width="1.5"
+      />
+      <path
+        class="sky-progress-line-path"
+        d="M 0.75, 0.75 L 99.25, 0.75"
+        fill-opacity="0"
+        stroke="#52c41a"
+        stroke-linecap="round"
+        stroke-width="1.5"
+        style="stroke-dasharray:100px, 100px;stroke-dashoffset:0px;transition:stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear"
+      />
+    </svg>
+    <span
+      class="sky-progress-info"
+    >
+      <svg
+        fill="none"
+        height="1em"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        style="color:#52c41a"
+        viewBox="0 0 24 24"
+        width="1em"
+      >
+        <path
+          d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+        />
+        <polyline
+          points="22 4 12 14.01 9 11.01"
+        />
+      </svg>
+    </span>
+  </div>
+</div>
+`;
