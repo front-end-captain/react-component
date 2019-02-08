@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 import Line from "./line.jsx";
 import Circle from "./circle.jsx";
+import { ErrorIcon, SuccessIcon } from "./../Icon/index.jsx";
 
 import { progressTrailColor, successColor, errorColor, infoColor } from "./../_style/vars.js";
-import { ErrorIcon, SuccessIcon } from "./../Icon/index.jsx";
 
 const Progress = (props) => {
   const { type, lineColor } = props;

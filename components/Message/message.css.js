@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import { infoColor, errorColor, warningColor, successColor } from "./../_style/vars.js";
-import { skySpin, skyMessageFadeIn, skyMessageFadeOut } from "./../_style/animate.js";
+import { skySpinRotate, skyMessageFadeIn, skyMessageFadeOut } from "./../_style/animate.js";
 
 export const Wrapper = styled.div`
   font-size: 14px;
@@ -87,6 +87,6 @@ export const ItemContent = styled.div`
 
   .sky-message-icon-loading {
     color: ${infoColor};
-    animation: ${skySpin} 1.5s linear infinite;
+    animation: ${skySpinRotate} 1s linear infinite;
   }
 `;

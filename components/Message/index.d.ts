@@ -36,7 +36,7 @@ export interface NoticeProps {
 
 export class Message extends React.Component<ConfigOptions, MessageState> {}
 
-export class Notice extends React.Component<NoticeProps, any> {}
+export class Notice extends React.Component<NoticeProps, {}> {}
 
 export interface message {
   info(content: configContent, duration?: configDuration, onClose?: configOnClose): void;

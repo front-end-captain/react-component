@@ -4,6 +4,7 @@ import classNames from "classnames";
 import scrollIntoViewIfNeeded from "scroll-into-view-if-needed";
 
 import TooltipPortal from "./TooltipPortal.jsx";
+
 import { OverlayContent, TooltipWrapper, TriggerWrapper } from "./Tooltip.css.js";
 
 class Tooltip extends React.Component {

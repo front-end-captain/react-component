@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { primaryColor, dangerColor, defaultBorderColor, linkColor } from "./../_style/vars.js";
-import { skySpin } from "./../_style/animate.js";
+import { skySpinRotate } from "./../_style/animate.js";
 
 const ButtonWrapper = styled.button`
+  position: relative;
   line-height: 1.499;
   display: inline-block;
   font-weight: 400;
@@ -19,11 +20,26 @@ const ButtonWrapper = styled.button`
   height: 32px;
   user-select: none;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  position: relative;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
   color: rgba(0, 0, 0, 0.65);
   background-color: #fff;
   border-color: ${defaultBorderColor};
+
+  &:before {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+    background: #fff;
+    opacity: 0.35;
+    content: "";
+    border-radius: inherit;
+    z-index: 1;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    display: none;
+  }
 
   &.${(props) => props.prefixCls}-default:hover {
     color: ${linkColor};
@@ -92,16 +108,15 @@ const ButtonWrapper = styled.button`
     height: 24px;
   }
 
-  &.${(props) => props.prefixCls}-loading {
-    opacity: 0.7;
-    cursor: not-allowed;
+  &.${(props) => props.prefixCls}-loading:before {
+    display: block;
   }
 
   &.${(props) => props.prefixCls}-loading .sky-loading {
     display: inline-block;
     vertical-align: middle;
     margin: -3px 10px 0 0;
-    animation: ${skySpin} 1.5s linear infinite;
+    animation: ${skySpinRotate} 1s linear infinite;
   }
 
   &.${(props) => props.prefixCls}-block {

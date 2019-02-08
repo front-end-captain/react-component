@@ -29,7 +29,7 @@ const ConfirmModal = (props) => {
 
   const contentPrefixCls = `${prefixClassName}-confirm`;
 
-  const cls = classNames("sky-modal-confirm", `${contentPrefixCls}-${type}`, className);
+  const wrapCls = classNames("sky-modal-confirm", `${contentPrefixCls}-${type}`, className);
 
   const config = {
     prefixCls: prefixClassName,
@@ -41,7 +41,7 @@ const ConfirmModal = (props) => {
     title: "",
     footer: null,
     visible,
-    wrapClassName: cls,
+    wrapClassName: wrapCls,
     zIndex,
     onCancel: close,
     centered,

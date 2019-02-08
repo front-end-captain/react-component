@@ -1,6 +1,6 @@
 import { keyframes } from "styled-components";
 
-export const skySpin = keyframes`
+export const skySpinRotate = keyframes`
   0% {
     transform: rotate(0deg);
   }

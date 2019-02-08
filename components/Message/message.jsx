@@ -4,7 +4,13 @@ import PropTypes from "prop-types";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import MessageItem from "./notice.jsx";
-import { InfoIcon, ErrorIcon, SuccessIcon, WarningIcon, LoadingIcon } from "./../Icon/index.jsx";
+import {
+  InfoIcon,
+  ErrorIcon,
+  SuccessIcon,
+  WarningIcon,
+  CircleLoadingIcon,
+} from "./../Icon/index.jsx";
 
 import { Wrapper } from "./message.css.js";
 
@@ -189,7 +195,7 @@ const message = {
       content,
       duration,
       onClose,
-      icon: <LoadingIcon className="sky-message-icon sky-message-icon-loading" />,
+      icon: <CircleLoadingIcon className="sky-message-icon sky-message-icon-loading" />,
     });
   },
 

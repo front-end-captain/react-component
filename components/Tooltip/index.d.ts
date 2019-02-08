@@ -20,4 +20,4 @@ export interface TooltipProps extends AbstractTooltipProps {
   title?: React.ReactNode | RenderFunction;
 }
 
-export default class Tooltip extends React.Component<TooltipProps, any> {}
+export default class Tooltip extends React.Component<TooltipProps, {}> {}

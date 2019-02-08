@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
-import { LoadingIcon } from "./../Icon/index.jsx";
+import { CircleLoadingIcon } from "./../Icon/index.jsx";
 
 import ButtonWrapper from "./Button.css.js";
 
@@ -43,7 +43,7 @@ const Button = ({
   };
   return (
     <ButtonWrapper {...baseProps}>
-      {loading && <LoadingIcon className="sky-loading" />}
+      {loading && <CircleLoadingIcon className="sky-loading" />}
       <span>{children || "Button"}</span>
     </ButtonWrapper>
   );

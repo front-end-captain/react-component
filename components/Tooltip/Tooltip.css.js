@@ -12,13 +12,11 @@ import {
   skySliderRightOut,
 } from "./../_style/animate.js";
 
-// Wrapper
 const TooltipWrapper = styled.div`
   display: inline-block;
   vertical-align: top;
 `;
 
-// OverlayContent
 const OverlayContent = styled.div`
   position: absolute;
   background-clip: border-box;
@@ -138,7 +136,6 @@ const OverlayContent = styled.div`
   }
 `;
 
-// Trigger
 const TriggerWrapper = styled.div`
   display: inline-block;
   cursor: pointer;

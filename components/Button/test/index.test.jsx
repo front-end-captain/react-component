@@ -3,7 +3,7 @@ import assert from "power-assert";
 import { render, shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 import Button from "../index";
-import { LoadingIcon } from "./../../Icon/index.jsx";
+import { CircleLoadingIcon } from "./../../Icon/index.jsx";
 
 describe("<Button/>", () => {
   it("should render a <Button/> components", () => {
@@ -74,7 +74,7 @@ describe("<Button/>", () => {
 
   it("should can render loading icon with button", () => {
     const wrapper = shallow(<Button loading>sky</Button>);
-    assert(wrapper.find(LoadingIcon).length === 1);
+    assert(wrapper.find(CircleLoadingIcon).length === 1);
     assert(wrapper.find(".sky-loading").length === 1);
   });
 });
