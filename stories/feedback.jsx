@@ -1,16 +1,20 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-import message from "../components/Message/index.js";
 import ExampleCard from "./components/ExampleCard/index.jsx";
 import BasicModal from "./components/BasicModalUsage/BasicModal.jsx";
 import ConfirmModal from "./components/BasicModalUsage/ConfirmModal.jsx";
 
-import Button from "./../components/Button/index.js";
-import Progress from "./../components/Progress/index.js";
-
 import DynamicLineProgress from "./components/ProgressUsage/dynamicLineProgress.jsx";
 import DynamicCircleProgress from "./components/ProgressUsage/dynamicCircleProgress.jsx";
+import ToggleSpin from "./components/SpinUsage/toggleSpin.jsx";
+
+import Button from "./../components/Button/index.js";
+import Progress from "./../components/Progress/index.js";
+import message from "../components/Message/index.js";
+import Spin from "./../components/Spin/index.js";
+
+import { CircleLoadingIcon } from "./../components/Icon/index.jsx";
 
 import "./style/common.css";
 
@@ -193,6 +197,73 @@ storiesOf("反馈", module)
                 description="通过设置 `type=dashboard`, 可以很方便地实现仪表盘样式的进度条。"
               >
                 <Progress type="dashboard" percent={75} />
+              </ExampleCard>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  })
+  .add("Spin", () => {
+    const loadingIcon = <CircleLoadingIcon />;
+    return (
+      <div className="modal-example example-wrapper">
+        <div className="modal-example-header example-header">
+          <h1>Modal</h1>
+        </div>
+        <div className="modal-example-demo demo-wrapper">
+          <h3>示例</h3>
+          <div className="demo-container">
+            <div className="demo-container-left">
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="基本使用"
+                description="一个简单的 loading 状态。"
+              >
+                <Spin />
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="三种大小"
+                description="小的用于文本加载，默认用于卡片容器级加载，大的用于页面级加载。"
+              >
+                <Spin size="small" style={{ marginRight: "10px" }} />
+                <Spin style={{ marginRight: "10px" }} />
+                <Spin size="large" />
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="自定义加载器"
+                description="使用自定义指示符。"
+              >
+                <Spin tip="加载中..." indicator={loadingIcon} />
+              </ExampleCard>
+            </div>
+            <div className="demo-container-right">
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="放到一个容器中"
+                description="在一个容器中使用 Spin"
+              >
+                <Spin>
+                  <div
+                    style={{
+                      padding: "30px 10px",
+                      border: "1px solid #ccc",
+                      borderRadius: "6px",
+                      backgroundColor: "#e6f7ff",
+                    }}
+                  >
+                    some content
+                  </div>
+                </Spin>
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="放到一个容器中"
+                description="在一个容器中使用 Spin"
+              >
+                <ToggleSpin />
               </ExampleCard>
             </div>
           </div>

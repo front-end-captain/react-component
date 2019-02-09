@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Spin /> should render custom indicator when it's set 1`] = `
+<div
+  class="sky-spin-wrapper sky-spin-default sky-spin-spinning spincss__SpinWrapper-sc-194o6xu-1 ekEaJL"
+>
+  <div
+    class="sky-spin-spinning-icon"
+  />
+</div>
+`;
