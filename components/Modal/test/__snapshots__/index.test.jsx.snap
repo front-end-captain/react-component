@@ -71,7 +71,7 @@ exports[`<Modal /> should render a Modal component 1`] = `
               class="sky-modal-footer-container"
             >
               <button
-                class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+                class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 cRNwTE"
                 type="button"
               >
                 <span>
@@ -81,7 +81,7 @@ exports[`<Modal /> should render a Modal component 1`] = `
                 </span>
               </button>
               <button
-                class="sky-btn sky-btn-primary Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+                class="sky-btn sky-btn-primary Buttoncss__ButtonWrapper-k9s1tq-0 cRNwTE"
                 type="button"
               >
                 <span>
@@ -165,7 +165,7 @@ exports[`<Modal /> should render a Modal component 1`] = `
               class="sky-modal-footer-container"
             >
               <button
-                class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+                class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 cRNwTE"
                 type="button"
               >
                 <span>
@@ -175,7 +175,7 @@ exports[`<Modal /> should render a Modal component 1`] = `
                 </span>
               </button>
               <button
-                class="sky-btn sky-btn-primary Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+                class="sky-btn sky-btn-primary Buttoncss__ButtonWrapper-k9s1tq-0 cRNwTE"
                 type="button"
               >
                 <span>
@@ -328,7 +328,7 @@ exports[`<Modal /> should render a Modal component 1`] = `
               class="sky-modal-footer-container"
             >
               <button
-                class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+                class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 cRNwTE"
                 type="button"
               >
                 <span>
@@ -338,7 +338,7 @@ exports[`<Modal /> should render a Modal component 1`] = `
                 </span>
               </button>
               <button
-                class="sky-btn sky-btn-primary Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+                class="sky-btn sky-btn-primary Buttoncss__ButtonWrapper-k9s1tq-0 cRNwTE"
                 type="button"
               >
                 <span>

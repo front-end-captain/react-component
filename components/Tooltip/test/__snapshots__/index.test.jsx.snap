@@ -59,7 +59,7 @@ exports[`Tooltip should render a <Tooltip> component 1`] = `
       class="Tooltipcss__TriggerWrapper-be2ocw-2 jUvocl"
     >
       <button
-        class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+        class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 cRNwTE"
         type="button"
       >
         <span>
@@ -81,7 +81,7 @@ exports[`Tooltip should render a <Tooltip> component 1`] = `
       class="Tooltipcss__TriggerWrapper-be2ocw-2 jUvocl"
     >
       <button
-        class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+        class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 cRNwTE"
         type="button"
       >
         <span>
@@ -103,7 +103,7 @@ exports[`Tooltip should render a <Tooltip> component 1`] = `
       class="Tooltipcss__TriggerWrapper-be2ocw-2 jUvocl"
     >
       <button
-        class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+        class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 cRNwTE"
         type="button"
       >
         <span>
@@ -125,7 +125,7 @@ exports[`Tooltip should render a <Tooltip> component 1`] = `
       class="Tooltipcss__TriggerWrapper-be2ocw-2 jUvocl"
     >
       <button
-        class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 gbjZNk"
+        class="sky-btn sky-btn-default sky-btn-normal Buttoncss__ButtonWrapper-k9s1tq-0 cRNwTE"
         type="button"
       >
         <span>
