@@ -13,6 +13,7 @@ import Button from "./../components/Button/index.js";
 import Progress from "./../components/Progress/index.js";
 import message from "../components/Message/index.js";
 import Spin from "./../components/Spin/index.js";
+import Alert from "./../components/Alert/index.js";
 
 import { CircleLoadingIcon } from "./../components/Icon/index.jsx";
 
@@ -264,6 +265,109 @@ storiesOf("反馈", module)
                 description="在一个容器中使用 Spin"
               >
                 <ToggleSpin />
+              </ExampleCard>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  })
+  .add("Alert", () => {
+    return (
+      <div className="modal-example example-wrapper">
+        <div className="modal-example-header example-header">
+          <h1>Modal</h1>
+        </div>
+        <div className="modal-example-demo demo-wrapper">
+          <h3>示例</h3>
+          <div className="demo-container">
+            <div className="demo-container-left">
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="基本使用"
+                description="最简单的用法，适用于简短的警告提示。"
+              >
+                <Alert
+                  content="Detailed description and advices about successful copywriting."
+                  style={{ marginBottom: "10px" }}
+                />
+                <Alert
+                  title="This is Title"
+                  content="Detailed description and advices about successful copywriting."
+                />
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="可以关闭的 Alert"
+                description="显示关闭按钮，点击可关闭警告提示。"
+              >
+                <Alert
+                  closable
+                  showIcon
+                  title="Something heppended"
+                  content="Detailed description and advices about successful copywriting"
+                  type="error"
+                  style={{ marginBottom: "10px" }}
+                />
+                <Alert
+                  closable
+                  showIcon
+                  content="Detailed description and advices about successful copywriting"
+                  type="warn"
+                  style={{ marginBottom: "10px" }}
+                />
+                <Alert
+                  closable
+                  title="This is title"
+                  content="Detailed description and advices about successful copywriting"
+                  type="success"
+                />
+              </ExampleCard>
+            </div>
+            <div className="demo-container-right">
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="四种类型"
+                description="包括 `info`, `error`, `warn`, `success` 四种类型"
+              >
+                <Alert
+                  type="info"
+                  content="Detailed description and advices about info copywriting."
+                  style={{ marginBottom: "10px" }}
+                />
+                <Alert
+                  type="warn"
+                  content="Detailed description and advices about warning copywriting."
+                  style={{ marginBottom: "10px" }}
+                />
+                <Alert
+                  type="success"
+                  content="Detailed description and advices about successful copywriting."
+                  style={{ marginBottom: "10px" }}
+                />
+                <Alert
+                  type="error"
+                  content="Detailed description and advices about error copywriting."
+                  style={{ marginBottom: "10px" }}
+                />
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="图标"
+                description="可口的图标让信息类型更加醒目。"
+              >
+                <Alert
+                  showIcon
+                  title="Something heppended"
+                  content="Detailed description and advices about successful copywriting"
+                  type="error"
+                  style={{ marginBottom: "10px" }}
+                />
+                <Alert
+                  showIcon
+                  content="Detailed description and advices about successful copywriting"
+                  type="warn"
+                />
               </ExampleCard>
             </div>
           </div>

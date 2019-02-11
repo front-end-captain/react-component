@@ -175,3 +175,14 @@ export const skyMessageFadeOut = keyframes`
     transform: translateY(-50px);
   }
 `;
+
+export const skyAlertHide = keyframes`
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+`;
