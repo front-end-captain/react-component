@@ -73,11 +73,11 @@ storiesOf("数据展示", module)
   })
   .add("Badge", () => {
     return (
-      <div className="tooltip-example example-wrapper">
-        <div className="tooltip-example-header example-header">
-          <h1>Tooltip</h1>
+      <div className="badge-example example-wrapper">
+        <div className="badge-example-header example-header">
+          <h1>Badge</h1>
         </div>
-        <div className="tooltip-example-demo demo-wrapper">
+        <div className="badge-example-demo demo-wrapper">
           <h3>示例</h3>
           <div className="demo-container">
             <div className="demo-container-left">

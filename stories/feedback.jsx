@@ -71,11 +71,11 @@ storiesOf("反馈", module)
     };
 
     return (
-      <div className="modal-example example-wrapper">
-        <div className="modal-example-header example-header">
+      <div className="message-example example-wrapper">
+        <div className="message-example-header example-header">
           <h1>Message</h1>
         </div>
-        <div className="modal-example-demo demo-wrapper">
+        <div className="message-example-demo demo-wrapper">
           <h3>示例</h3>
           <div className="demo-container">
             <div className="demo-container-left">
@@ -113,11 +113,11 @@ storiesOf("反馈", module)
   })
   .add("Progress", () => {
     return (
-      <div className="modal-example example-wrapper">
-        <div className="modal-example-header example-header">
+      <div className="progress-example example-wrapper">
+        <div className="progress-example-header example-header">
           <h1>Progress</h1>
         </div>
-        <div className="modal-example-demo demo-wrapper">
+        <div className="progress-example-demo demo-wrapper">
           <h3>示例</h3>
           <div className="demo-container">
             <div className="demo-container-left">
@@ -208,11 +208,11 @@ storiesOf("反馈", module)
   .add("Spin", () => {
     const loadingIcon = <CircleLoadingIcon />;
     return (
-      <div className="modal-example example-wrapper">
-        <div className="modal-example-header example-header">
+      <div className="spin-example example-wrapper">
+        <div className="spin-example-header example-header">
           <h1>Modal</h1>
         </div>
-        <div className="modal-example-demo demo-wrapper">
+        <div className="=spin-example-demo demo-wrapper">
           <h3>示例</h3>
           <div className="demo-container">
             <div className="demo-container-left">
@@ -274,11 +274,11 @@ storiesOf("反馈", module)
   })
   .add("Alert", () => {
     return (
-      <div className="modal-example example-wrapper">
-        <div className="modal-example-header example-header">
+      <div className="alert-example example-wrapper">
+        <div className="alert-example-header example-header">
           <h1>Modal</h1>
         </div>
-        <div className="modal-example-demo demo-wrapper">
+        <div className="alert-example-demo demo-wrapper">
           <h3>示例</h3>
           <div className="demo-container">
             <div className="demo-container-left">
