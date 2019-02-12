@@ -10,6 +10,7 @@ import {
 } from "react-icons/fi";
 import { FaSpinner, FaRegCheckCircle } from "react-icons/fa";
 import { IoIosInformationCircleOutline } from "react-icons/io";
+import { MdMailOutline } from "react-icons/md";
 
 import OneQuarterLoading from "./oneQuarterLoading.jsx";
 
@@ -26,3 +27,5 @@ export const UpIcon = (props) => <FiChevronUp {...props} />;
 export const DownIcon = (props) => <FiChevronDown {...props} />;
 export const ArrowRightIcon = (props) => <FiChevronRight {...props} />;
 export const ArrowLeftIcon = (props) => <FiChevronLeft {...props} />;
+
+export const MessageIcon = (props) => <MdMailOutline {...props} />;
