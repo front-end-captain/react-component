@@ -2,7 +2,6 @@ import React, { Component, Children, Fragment, cloneElement } from "react";
 import PropTypes from "prop-types";
 import { isFragment } from "react-is";
 import classNames from "classnames";
-import { TransitionGroup } from "react-transition-group";
 
 import CollapseWrapper from "./collapse.css.js";
 
@@ -135,7 +134,7 @@ class Collapse extends Component {
 
     return (
       <CollapseWrapper prefixCls={prefixCls} className={collapseWrapperClassName} style={style}>
-        <TransitionGroup component={null}>{this.getCollapseItem()}</TransitionGroup>
+        {this.getCollapseItem()}
       </CollapseWrapper>
     );
   }
