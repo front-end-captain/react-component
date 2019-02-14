@@ -4,7 +4,8 @@ import { storiesOf } from "@storybook/react";
 import Tooltip from "../components/Tooltip/index.js";
 import Button from "./../components/Button/index.js";
 import Badge from "./../components/Badge/index.js";
-import { InfoIcon, MessageIcon } from "./../components/Icon/index.jsx";
+import { InfoIcon, MessageIcon, DownIconFill } from "./../components/Icon/index.jsx";
+import Collapse from "./../components/Collapse/index.js";
 
 import ExampleCard from "./components/ExampleCard/index.jsx";
 import DynamicBadge from "./components/BadgeUsage/dynamicBadge.jsx";
@@ -87,17 +88,17 @@ storiesOf("数据展示", module)
                 description="简单的徽章展示，当 `count` 为 0 时，默认不显示，但是可以使用 `showZero` 修改为显示。"
               >
                 <Badge count={9} wrapStyle={{ marginRight: "20px" }}>
-                  <a href="#" className="badge-example">
+                  <a href="#" className="badge-example-placeholder">
                     {}
                   </a>
                 </Badge>
                 <Badge count={0} showZero wrapStyle={{ marginRight: "20px" }}>
-                  <a href="#" className="badge-example">
+                  <a href="#" className="badge-example-placeholder">
                     {}
                   </a>
                 </Badge>
                 <Badge count={<InfoIcon style={{ fontSize: "18px", color: "red" }} />}>
-                  <a href="#" className="badge-example">
+                  <a href="#" className="badge-example-placeholder">
                     {}
                   </a>
                 </Badge>
@@ -149,22 +150,22 @@ storiesOf("数据展示", module)
                 description="超过 `overCount` 会默认显示为 `overCount+`, 默认 `overCount` 为 99。"
               >
                 <Badge count={109} wrapStyle={{ marginRight: "30px" }}>
-                  <a href="#" className="badge-example">
+                  <a href="#" className="badge-example-placeholder">
                     {}
                   </a>
                 </Badge>
                 <Badge count={1009} overCount={999} wrapStyle={{ marginRight: "30px" }}>
-                  <a href="#" className="badge-example">
+                  <a href="#" className="badge-example-placeholder">
                     {}
                   </a>
                 </Badge>
                 <Badge count={1009} overCount={10} wrapStyle={{ marginRight: "30px" }}>
-                  <a href="#" className="badge-example">
+                  <a href="#" className="badge-example-placeholder">
                     {}
                   </a>
                 </Badge>
                 <Badge count={888} overCount={999} wrapStyle={{ marginRight: "30px" }}>
-                  <a href="#" className="badge-example">
+                  <a href="#" className="badge-example-placeholder">
                     {}
                   </a>
                 </Badge>
@@ -197,17 +198,152 @@ storiesOf("数据展示", module)
                 description="可以设置 offset[right, top] 来设置徽标的偏移量。"
               >
                 <Badge count={10} offset={[10, 0]} wrapStyle={{ marginRight: "20px" }}>
-                  <a href="#" className="badge-example">
+                  <a href="#" className="badge-example-placeholder">
                     {}
                   </a>
                 </Badge>
                 <Badge dot offset={[40, 0]}>
-                  <a href="#" className="badge-example">
+                  <a href="#" className="badge-example-placeholder">
                     {}
                   </a>
                 </Badge>
               </ExampleCard>
             </div>
+          </div>
+        </div>
+      </div>
+    );
+  })
+  .add("Collapse", () => {
+    const { Panel } = Collapse;
+    const text = `A dog is a type of domesticated animal.Known for its loyalty and faithfulness,
+    it can be found as a welcome guest in many households across the world.`;
+    const callback = (key) => console.log(key);
+    const customPanelStyle = {
+      background: "#f7f7f7",
+      borderRadius: "4px",
+      marginBottom: "24px",
+      border: "0",
+      overflow: "hidden",
+    };
+
+    return (
+      <div className="collapse-example example-wrapper">
+        <div className="collapse-example-header example-header">
+          <h1>Tooltip</h1>
+        </div>
+        <div className="collapse-example-demo demo-wrapper">
+          <h3>示例</h3>
+          <div className="demo-container">
+            <ExampleCard
+              className="demo-item-container-basic"
+              title="基本使用"
+              description="最简单的用法。"
+            >
+              <Collapse defaultActiveKey={["1"]} onChange={callback}>
+                <Panel header="This is panel header 1" key="1">
+                  <p>{text}</p>
+                </Panel>
+                <Panel header="This is panel header 2" key="2">
+                  <p>{text}</p>
+                </Panel>
+                <Panel header="This is panel header 3" key="3" disabled>
+                  <p>{text}</p>
+                </Panel>
+              </Collapse>
+            </ExampleCard>
+            <ExampleCard
+              className="demo-item-container-basic"
+              title="手风琴"
+              description="手风琴，每次只打开一个 collapse。默认打开第一个。"
+            >
+              <Collapse accordion>
+                <Panel header="This is panel header 1" key="1">
+                  <p>{text}</p>
+                </Panel>
+                <Panel header="This is panel header 2" key="2">
+                  <p>{text}</p>
+                </Panel>
+                <Panel header="This is panel header 3" key="3">
+                  <p>{text}</p>
+                </Panel>
+              </Collapse>
+            </ExampleCard>
+            <ExampleCard title="嵌套面板" description="嵌套折叠面板。">
+              <Collapse onChange={callback}>
+                <Panel header="This is panel header 1" key="1">
+                  <Collapse defaultActiveKey={["1"]}>
+                    <Panel header="This is panel nest panel" key="1">
+                      <p>{text}</p>
+                    </Panel>
+                  </Collapse>
+                </Panel>
+                <Panel header="This is panel header 2" key="2">
+                  <p>{text}</p>
+                </Panel>
+                <Panel header="This is panel header 3" key="3">
+                  <p>{text}</p>
+                </Panel>
+              </Collapse>
+            </ExampleCard>
+            <ExampleCard
+              title="隐藏箭头"
+              description="你可以通过 showArrow={false} 隐藏 CollapsePanel 组件的箭头图标。"
+            >
+              <Collapse defaultActiveKey={["1"]} onChange={callback}>
+                <Panel header="This is panel header with arrow icon" key="1">
+                  <p>{text}</p>
+                </Panel>
+                <Panel showArrow={false} header="This is panel header with no arrow icon" key="2">
+                  <p>{text}</p>
+                </Panel>
+              </Collapse>
+            </ExampleCard>
+            <ExampleCard
+              className="demo-item-container-basic"
+              title="简洁面板"
+              description="最简单的用法。"
+            >
+              <Collapse defaultActiveKey={["1"]} bordered={false} onChange={callback}>
+                <Panel header="This is panel header 1" key="1">
+                  <p>{text}</p>
+                </Panel>
+                <Panel header="This is panel header 2" key="2">
+                  <p>{text}</p>
+                </Panel>
+                <Panel header="This is panel header 3" key="3">
+                  <p>{text}</p>
+                </Panel>
+              </Collapse>
+            </ExampleCard>
+            <ExampleCard
+              className="demo-item-container-basic"
+              title="自定义面板"
+              description="自定义各个面板的背景色、圆角、边距和图标。"
+            >
+              <Collapse
+                bordered={false}
+                defaultActiveKey={["1"]}
+                expandIcon={({ isActive }) => (
+                  <DownIconFill
+                    style={{
+                      transform: `rotate(${isActive ? -90 : 0}deg)`,
+                      transition: "all 0.2s",
+                    }}
+                  />
+                )}
+              >
+                <Panel header="This is panel header 1" key="1" style={customPanelStyle}>
+                  <p>{text}</p>
+                </Panel>
+                <Panel header="This is panel header 2" key="2" style={customPanelStyle}>
+                  <p>{text}</p>
+                </Panel>
+                <Panel header="This is panel header 3" key="3" style={customPanelStyle}>
+                  <p>{text}</p>
+                </Panel>
+              </Collapse>
+            </ExampleCard>
           </div>
         </div>
       </div>

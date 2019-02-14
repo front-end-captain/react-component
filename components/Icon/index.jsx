@@ -8,7 +8,7 @@ import {
   FiChevronRight,
   FiChevronLeft,
 } from "react-icons/fi";
-import { FaSpinner, FaRegCheckCircle } from "react-icons/fa";
+import { FaSpinner, FaRegCheckCircle, FaCaretDown } from "react-icons/fa";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { MdMailOutline } from "react-icons/md";
 
@@ -27,5 +27,7 @@ export const UpIcon = (props) => <FiChevronUp {...props} />;
 export const DownIcon = (props) => <FiChevronDown {...props} />;
 export const ArrowRightIcon = (props) => <FiChevronRight {...props} />;
 export const ArrowLeftIcon = (props) => <FiChevronLeft {...props} />;
+
+export const DownIconFill = (props) => <FaCaretDown {...props} />;
 
 export const MessageIcon = (props) => <MdMailOutline {...props} />;

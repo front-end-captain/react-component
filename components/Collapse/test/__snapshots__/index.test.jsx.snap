@@ -1,0 +1,354 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Panel should render some Collapse components 1`] = `
+<div>
+  <div
+    class="sky-collapse-wrapper collapsecss__CollapseWrapper-dsnzp-0 kMkwyZ"
+  >
+    <div
+      class="sky-collapse-panel sky-collapse-panel-active collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+    >
+      <div
+        class="sky-collapse-panel-header"
+      >
+        <span
+          class="sky-collapse-panel-header-icon"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            style="transform:rotate(-90deg);transition:all 0.2s"
+            viewBox="0 0 24 24"
+            width="1em"
+          >
+            <polyline
+              points="6 9 12 15 18 9"
+            />
+          </svg>
+        </span>
+        title
+      </div>
+      <div
+        class="sky-collapse-panel-content sky-collapse-panel-content-active"
+      >
+        some text
+      </div>
+    </div>
+    <div
+      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+    >
+      <div
+        class="sky-collapse-panel-header"
+      >
+        <span
+          class="sky-collapse-panel-header-icon"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            style="transform:rotate(0deg);transition:all 0.2s"
+            viewBox="0 0 24 24"
+            width="1em"
+          >
+            <polyline
+              points="6 9 12 15 18 9"
+            />
+          </svg>
+        </span>
+        title
+      </div>
+      <div
+        class="sky-collapse-panel-content sky-collapse-panel-content-inactive"
+      >
+        some text
+      </div>
+    </div>
+    <div
+      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+    >
+      <div
+        class="sky-collapse-panel-header"
+      >
+        <span
+          class="sky-collapse-panel-header-icon"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            style="transform:rotate(0deg);transition:all 0.2s"
+            viewBox="0 0 24 24"
+            width="1em"
+          >
+            <polyline
+              points="6 9 12 15 18 9"
+            />
+          </svg>
+        </span>
+        title
+      </div>
+      <div
+        class="sky-collapse-panel-content sky-collapse-panel-content-inactive"
+      >
+        some text
+      </div>
+    </div>
+  </div>
+  <div
+    class="sky-collapse-wrapper collapsecss__CollapseWrapper-dsnzp-0 kMkwyZ"
+  >
+    <div
+      class="sky-collapse-panel sky-collapse-panel-active collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+    >
+      <div
+        class="sky-collapse-panel-header"
+      >
+        <span
+          class="sky-collapse-panel-header-icon"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            style="transform:rotate(-90deg);transition:all 0.2s"
+            viewBox="0 0 24 24"
+            width="1em"
+          >
+            <polyline
+              points="6 9 12 15 18 9"
+            />
+          </svg>
+        </span>
+        title
+      </div>
+      <div
+        class="sky-collapse-panel-content sky-collapse-panel-content-active"
+        role="tabpanel"
+      >
+        some text
+      </div>
+    </div>
+    <div
+      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+    >
+      <div
+        class="sky-collapse-panel-header"
+      >
+        <span
+          class="sky-collapse-panel-header-icon"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            style="transform:rotate(0deg);transition:all 0.2s"
+            viewBox="0 0 24 24"
+            width="1em"
+          >
+            <polyline
+              points="6 9 12 15 18 9"
+            />
+          </svg>
+        </span>
+        title
+      </div>
+      <div
+        class="sky-collapse-panel-content sky-collapse-panel-content-inactive"
+        role="tabpanel"
+      >
+        some text
+      </div>
+    </div>
+    <div
+      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+    >
+      <div
+        class="sky-collapse-panel-header"
+      >
+        <span
+          class="sky-collapse-panel-header-icon"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            style="transform:rotate(0deg);transition:all 0.2s"
+            viewBox="0 0 24 24"
+            width="1em"
+          >
+            <polyline
+              points="6 9 12 15 18 9"
+            />
+          </svg>
+        </span>
+        title
+      </div>
+      <div
+        class="sky-collapse-panel-content sky-collapse-panel-content-inactive"
+        role="tabpanel"
+      >
+        some text
+      </div>
+    </div>
+  </div>
+  <div
+    class="sky-collapse-wrapper collapsecss__CollapseWrapper-dsnzp-0 kMkwyZ"
+  >
+    <div
+      class="sky-collapse-panel sky-collapse-panel-active collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+    >
+      <div
+        class="sky-collapse-panel-header"
+      >
+        <span
+          class="sky-collapse-panel-header-icon"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            style="transform:rotate(-90deg);transition:all 0.2s"
+            viewBox="0 0 24 24"
+            width="1em"
+          >
+            <polyline
+              points="6 9 12 15 18 9"
+            />
+          </svg>
+        </span>
+        This is panel header 1
+      </div>
+      <div
+        class="sky-collapse-panel-content sky-collapse-panel-content-active"
+      >
+        <div
+          class="sky-collapse-wrapper collapsecss__CollapseWrapper-dsnzp-0 kMkwyZ"
+        >
+          <div
+            class="sky-collapse-panel sky-collapse-panel-active collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+          >
+            <div
+              class="sky-collapse-panel-header"
+            >
+              <span
+                class="sky-collapse-panel-header-icon"
+              >
+                <svg
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  style="transform:rotate(-90deg);transition:all 0.2s"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <polyline
+                    points="6 9 12 15 18 9"
+                  />
+                </svg>
+              </span>
+              This is panel nest panel
+            </div>
+            <div
+              class="sky-collapse-panel-content sky-collapse-panel-content-active"
+            >
+              some text
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+    >
+      <div
+        class="sky-collapse-panel-header"
+      >
+        <span
+          class="sky-collapse-panel-header-icon"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            style="transform:rotate(0deg);transition:all 0.2s"
+            viewBox="0 0 24 24"
+            width="1em"
+          >
+            <polyline
+              points="6 9 12 15 18 9"
+            />
+          </svg>
+        </span>
+        This is panel header 2
+      </div>
+      <div
+        class="sky-collapse-panel-content sky-collapse-panel-content-inactive"
+      >
+        some text
+      </div>
+    </div>
+    <div
+      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+    >
+      <div
+        class="sky-collapse-panel-header"
+      >
+        <span
+          class="sky-collapse-panel-header-icon"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            style="transform:rotate(0deg);transition:all 0.2s"
+            viewBox="0 0 24 24"
+            width="1em"
+          >
+            <polyline
+              points="6 9 12 15 18 9"
+            />
+          </svg>
+        </span>
+        This is panel header 3
+      </div>
+      <div
+        class="sky-collapse-panel-content sky-collapse-panel-content-inactive"
+      >
+        some text
+      </div>
+    </div>
+  </div>
+</div>
+`;
