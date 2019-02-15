@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 const CollapseWrapper = styled.div`
   font-size: 14px;
-  font-variant: tabular-nums;
-  font-feature-settings: "tnum";
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.65);
   box-sizing: border-box;

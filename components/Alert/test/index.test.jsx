@@ -19,7 +19,7 @@ describe("Alert", () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
-  it("should invoke external callback conrrectly", () => {
+  it("should invoke external callback correctly", () => {
     const onClose = jest.fn();
     const afterClose = jest.fn();
 

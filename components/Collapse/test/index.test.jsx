@@ -8,7 +8,7 @@ const { Panel } = Collapse;
 
 describe("Panel", () => {
   it("should render some Collapse components", () => {
-    const wrpaper = render(
+    const wrapper = render(
       <div>
         <Collapse>
           <Panel header="title" key="1">
@@ -50,6 +50,6 @@ describe("Panel", () => {
       </div>,
     );
 
-    expect(toJson(wrpaper)).toMatchSnapshot();
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

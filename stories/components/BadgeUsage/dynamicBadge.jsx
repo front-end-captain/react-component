@@ -32,7 +32,7 @@ class DynamicBadge extends React.Component {
       <div>
         <div>
           <Badge count={count} showZero title="something">
-            <a href="#" className="badge-example">
+            <a href="#" className="badge-example-placeholder">
               {}
             </a>
           </Badge>
@@ -43,7 +43,7 @@ class DynamicBadge extends React.Component {
         </div>
         <div style={{ marginTop: 10 }}>
           <Badge dot={show}>
-            <a href="#" className="badge-example">
+            <a href="#" className="badge-example-placeholder">
               {}
             </a>
           </Badge>

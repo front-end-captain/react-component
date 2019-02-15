@@ -6,12 +6,10 @@ const AlertWrapper = styled.div`
   display: flex;
   flex-direction: row;
   font-size: 14px;
-  font-feature-settings: "tnum";
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.65);
   box-sizing: border-box;
   position: relative;
-  font-variant: tabular-nums;
   margin: 0;
   list-style: none;
   padding: 8px 15px 8px 16px;

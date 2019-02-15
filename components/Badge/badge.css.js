@@ -10,8 +10,6 @@ import {
 
 const BadgeWrapper = styled.div`
   font-size: 14px;
-  font-variant: tabular-nums;
-  font-feature-settings: "tnum";
   line-height: 1;
   color: rgba(0, 0, 0, 0.65);
   box-sizing: border-box;

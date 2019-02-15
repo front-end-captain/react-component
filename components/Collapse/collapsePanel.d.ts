@@ -16,7 +16,8 @@ export interface CollapsePanelProps {
     // forceRender?: boolean;
     isActive: boolean;
     // destroyInactivePanel: boolean;
-    arrordion: boolean;
+    accordion: boolean;
     expandIcon?: React.ReactNode | ((panelProps: CollapseProps) => React.ReactNode);
 }
+
 export default class CollapsePanel extends React.Component<CollapsePanelProps, {}> {}

@@ -1,7 +1,7 @@
 import * as React from "react";
 
 interface alertProps {
-  type?: "info" | "warn" | "sucess" | "error";
+  type?: "info" | "warn" | "success" | "error";
   closable?: boolean;
   title?: React.ReactNode;
   content?: React.ReactNode;
