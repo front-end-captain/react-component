@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import { CollapseProps } from "./collapse";
+
 export interface CollapsePanelProps {
     id: string;
     className?: string;
