@@ -6,6 +6,7 @@ import Button from "./../components/Button/index.js";
 import Badge from "./../components/Badge/index.js";
 import { InfoIcon, MessageIcon, DownIconFill } from "./../components/Icon/index.jsx";
 import Collapse from "./../components/Collapse/index.js";
+import Timeline from "./../components/Timeline/index.js";
 
 import ExampleCard from "./components/ExampleCard/index.jsx";
 import DynamicBadge from "./components/BadgeUsage/dynamicBadge.jsx";
@@ -344,6 +345,122 @@ storiesOf("数据展示", module)
                 </Panel>
               </Collapse>
             </ExampleCard>
+          </div>
+        </div>
+      </div>
+    );
+  })
+  .add("Timeline", () => {
+    return (
+      <div className="timeline-example example-wrapper">
+        <div className="timeline-example-header example-header">
+          <h1>Timeline</h1>
+        </div>
+        <div className="timeline-example-demo demo-wrapper">
+          <h3>示例</h3>
+          <div className="demo-container">
+            <div className="demo-container-left">
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="基本使用"
+                description="基本的时间轴。"
+              >
+                <Timeline>
+                  <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+                  <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+                  <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
+                  <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
+                </Timeline>
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="圈圈颜色"
+                description="圆圈颜色，绿色用于已完成、成功状态，红色表示告警或错误状态，蓝色可表示正在进行或其他默认状态。"
+              >
+                <Timeline>
+                  <Timeline.Item color="green">Create a services site 2015-09-01</Timeline.Item>
+                  <Timeline.Item color="green">Create a services site 2015-09-01</Timeline.Item>
+                  <Timeline.Item color="red">
+                    <p>Solve initial network problems 1</p>
+                    <p>Solve initial network problems 2</p>
+                    <p>Solve initial network problems 3 2015-09-01</p>
+                  </Timeline.Item>
+                  <Timeline.Item>
+                    <p>Technical testing 1</p>
+                    <p>Technical testing 2</p>
+                    <p>Technical testing 3 2015-09-01</p>
+                  </Timeline.Item>
+                </Timeline>
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="圈圈颜色"
+                description="圆圈颜色，绿色用于已完成、成功状态，红色表示告警或错误状态，蓝色可表示正在进行或其他默认状态。"
+              >
+                <Timeline pending="Recording...">
+                  <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+                  <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+                  <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
+                </Timeline>
+              </ExampleCard>
+            </div>
+            <div className="demo-container-right">
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="自定义时间轴点图标"
+                description="可以设置为图标或其他自定义元素。"
+              >
+                <Timeline>
+                  <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+                  <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+                  <Timeline.Item dot={<InfoIcon style={{ color: "red", fontSize: "18px" }} />}>
+                    Technical testing 2015-09-01
+                  </Timeline.Item>
+                  <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
+                </Timeline>
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="交替展现"
+                description="内容在时间轴两侧轮流出现。"
+              >
+                <Timeline mode="alternate">
+                  <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+                  <Timeline.Item color="green">
+                    Solve initial network problems 2015-09-01
+                  </Timeline.Item>
+                  <Timeline.Item dot={<InfoIcon style={{ color: "red", fontSize: "18px" }} />}>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                    veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                  </Timeline.Item>
+                  <Timeline.Item color="red">
+                    Network problems being solved 2015-09-01
+                  </Timeline.Item>
+                  <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+                  <Timeline.Item dot={<InfoIcon style={{ color: "red", fontSize: "18px" }} />}>
+                    Technical testing 2015-09-01
+                  </Timeline.Item>
+                </Timeline>
+              </ExampleCard>
+              <ExampleCard
+                className="demo-item-container-basic"
+                title="右侧时间轴"
+                description="时间轴点可以在内容的右边。"
+              >
+                <Timeline mode="right">
+                  <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+                  <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
+                  <Timeline.Item
+                    dot={<InfoIcon style={{ color: "red", fontSize: "18px" }} />}
+                    color="red"
+                  >
+                    Technical testing 2015-09-01
+                  </Timeline.Item>
+                  <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
+                </Timeline>
+              </ExampleCard>
+            </div>
           </div>
         </div>
       </div>
