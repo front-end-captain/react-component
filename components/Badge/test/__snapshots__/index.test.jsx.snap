@@ -3,7 +3,7 @@
 exports[`Badge should be render some Badge components 1`] = `
 <div>
   <div
-    class="sky-badge-wrapper badgecss__BadgeWrapper-cqs0r8-0 hewAQH"
+    class="sky-badge-wrapper badgecss__BadgeWrapper-cqs0r8-0 grqPbO"
   >
     <div
       class="sky-badge-container sky-badge-container-null sky-badge-container-hide sky-badge-no-icon sky-badge-no-child"
@@ -13,7 +13,7 @@ exports[`Badge should be render some Badge components 1`] = `
     </div>
   </div>
   <div
-    class="sky-badge-wrapper badgecss__BadgeWrapper-cqs0r8-0 hewAQH"
+    class="sky-badge-wrapper badgecss__BadgeWrapper-cqs0r8-0 grqPbO"
   >
     <div
       class="sky-badge-container sky-badge-container-null sky-badge-no-icon sky-badge-no-child sky-badge-multiple-words"
@@ -23,7 +23,7 @@ exports[`Badge should be render some Badge components 1`] = `
     </div>
   </div>
   <div
-    class="sky-badge-wrapper badgecss__BadgeWrapper-cqs0r8-0 hewAQH"
+    class="sky-badge-wrapper badgecss__BadgeWrapper-cqs0r8-0 grqPbO"
   >
     <div
       class="sky-badge-container sky-badge-container-null sky-badge-container-dotted sky-badge-no-icon sky-badge-no-child"
@@ -31,7 +31,7 @@ exports[`Badge should be render some Badge components 1`] = `
     />
   </div>
   <div
-    class="sky-badge-wrapper sky-badge-wrapper-status badgecss__BadgeWrapper-cqs0r8-0 hewAQH"
+    class="sky-badge-wrapper sky-badge-wrapper-status badgecss__BadgeWrapper-cqs0r8-0 grqPbO"
   >
     <div
       class="sky-badge-container sky-badge-container-info sky-badge-container-hide sky-badge-no-icon sky-badge-no-child sky-badge-status-dot"
@@ -39,7 +39,7 @@ exports[`Badge should be render some Badge components 1`] = `
     />
   </div>
   <div
-    class="sky-badge-wrapper sky-badge-wrapper-status badgecss__BadgeWrapper-cqs0r8-0 hewAQH"
+    class="sky-badge-wrapper sky-badge-wrapper-status badgecss__BadgeWrapper-cqs0r8-0 grqPbO"
   >
     <div
       class="sky-badge-container sky-badge-container-info sky-badge-container-hide sky-badge-no-icon sky-badge-no-child sky-badge-status-dot"
@@ -56,7 +56,7 @@ exports[`Badge should be render some Badge components 1`] = `
 
 exports[`Badge should render correct position when set offset 1`] = `
 <div
-  class="sky-badge-wrapper badgecss__BadgeWrapper-cqs0r8-0 cHwtxs"
+  class="sky-badge-wrapper badgecss__BadgeWrapper-cqs0r8-0 egUIVb"
 >
   <div
     class="sky-badge-container sky-badge-container-null sky-badge-container-dotted sky-badge-no-icon sky-badge-no-child"
@@ -67,7 +67,7 @@ exports[`Badge should render correct position when set offset 1`] = `
 
 exports[`Badge should render custom icon when set count for a ReactNode 1`] = `
 <div
-  class="sky-badge-wrapper badgecss__BadgeWrapper-cqs0r8-0 hewAQH"
+  class="sky-badge-wrapper badgecss__BadgeWrapper-cqs0r8-0 grqPbO"
 >
   <div
     class="sky-badge-container sky-badge-container-null sky-badge-no-child sky-badge-multiple-words"

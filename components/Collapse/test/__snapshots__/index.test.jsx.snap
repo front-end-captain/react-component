@@ -3,10 +3,10 @@
 exports[`Panel should render some Collapse components 1`] = `
 <div>
   <div
-    class="sky-collapse-wrapper collapsecss__CollapseWrapper-dsnzp-0 kMkwyZ"
+    class="sky-collapse-wrapper collapsecss__CollapseWrapper-dsnzp-0 fkgxCj"
   >
     <div
-      class="sky-collapse-panel sky-collapse-panel-active collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+      class="sky-collapse-panel sky-collapse-panel-active collapsePanelcss__PanelWrapper-ay2z5j-0 gNuQND"
     >
       <div
         class="sky-collapse-panel-header"
@@ -39,7 +39,7 @@ exports[`Panel should render some Collapse components 1`] = `
       </div>
     </div>
     <div
-      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 gNuQND"
     >
       <div
         class="sky-collapse-panel-header"
@@ -72,7 +72,7 @@ exports[`Panel should render some Collapse components 1`] = `
       </div>
     </div>
     <div
-      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 gNuQND"
     >
       <div
         class="sky-collapse-panel-header"
@@ -106,10 +106,10 @@ exports[`Panel should render some Collapse components 1`] = `
     </div>
   </div>
   <div
-    class="sky-collapse-wrapper collapsecss__CollapseWrapper-dsnzp-0 kMkwyZ"
+    class="sky-collapse-wrapper collapsecss__CollapseWrapper-dsnzp-0 fkgxCj"
   >
     <div
-      class="sky-collapse-panel sky-collapse-panel-active collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+      class="sky-collapse-panel sky-collapse-panel-active collapsePanelcss__PanelWrapper-ay2z5j-0 gNuQND"
     >
       <div
         class="sky-collapse-panel-header"
@@ -143,7 +143,7 @@ exports[`Panel should render some Collapse components 1`] = `
       </div>
     </div>
     <div
-      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 gNuQND"
     >
       <div
         class="sky-collapse-panel-header"
@@ -177,7 +177,7 @@ exports[`Panel should render some Collapse components 1`] = `
       </div>
     </div>
     <div
-      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 gNuQND"
     >
       <div
         class="sky-collapse-panel-header"
@@ -212,10 +212,10 @@ exports[`Panel should render some Collapse components 1`] = `
     </div>
   </div>
   <div
-    class="sky-collapse-wrapper collapsecss__CollapseWrapper-dsnzp-0 kMkwyZ"
+    class="sky-collapse-wrapper collapsecss__CollapseWrapper-dsnzp-0 fkgxCj"
   >
     <div
-      class="sky-collapse-panel sky-collapse-panel-active collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+      class="sky-collapse-panel sky-collapse-panel-active collapsePanelcss__PanelWrapper-ay2z5j-0 gNuQND"
     >
       <div
         class="sky-collapse-panel-header"
@@ -245,10 +245,10 @@ exports[`Panel should render some Collapse components 1`] = `
         class="sky-collapse-panel-content sky-collapse-panel-content-active"
       >
         <div
-          class="sky-collapse-wrapper collapsecss__CollapseWrapper-dsnzp-0 kMkwyZ"
+          class="sky-collapse-wrapper collapsecss__CollapseWrapper-dsnzp-0 fkgxCj"
         >
           <div
-            class="sky-collapse-panel sky-collapse-panel-active collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+            class="sky-collapse-panel sky-collapse-panel-active collapsePanelcss__PanelWrapper-ay2z5j-0 gNuQND"
           >
             <div
               class="sky-collapse-panel-header"
@@ -284,7 +284,7 @@ exports[`Panel should render some Collapse components 1`] = `
       </div>
     </div>
     <div
-      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 gNuQND"
     >
       <div
         class="sky-collapse-panel-header"
@@ -317,7 +317,7 @@ exports[`Panel should render some Collapse components 1`] = `
       </div>
     </div>
     <div
-      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 jdfdBF"
+      class="sky-collapse-panel collapsePanelcss__PanelWrapper-ay2z5j-0 gNuQND"
     >
       <div
         class="sky-collapse-panel-header"

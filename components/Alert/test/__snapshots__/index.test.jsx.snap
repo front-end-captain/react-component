@@ -3,7 +3,7 @@
 exports[`Alert should be render some Alert components 1`] = `
 <div>
   <div
-    class="sky-alert sky-alert-info sky-alert-no-title alertcss__AlertWrapper-sc-1m63gp0-0 hjrjVk"
+    class="sky-alert sky-alert-info sky-alert-no-title alertcss__AlertWrapper-sc-1m63gp0-0 iujTdz"
   >
     <div
       class="sky-alert-container"
@@ -16,7 +16,7 @@ exports[`Alert should be render some Alert components 1`] = `
     </div>
   </div>
   <div
-    class="sky-alert sky-alert-warn alertcss__AlertWrapper-sc-1m63gp0-0 hjrjVk"
+    class="sky-alert sky-alert-warn alertcss__AlertWrapper-sc-1m63gp0-0 iujTdz"
   >
     <div
       class="sky-alert-container"
@@ -34,7 +34,7 @@ exports[`Alert should be render some Alert components 1`] = `
     </div>
   </div>
   <div
-    class="sky-alert sky-alert-error sky-alert-no-title alertcss__AlertWrapper-sc-1m63gp0-0 hjrjVk"
+    class="sky-alert sky-alert-error sky-alert-no-title alertcss__AlertWrapper-sc-1m63gp0-0 iujTdz"
   >
     <div
       class="sky-alert-container"
@@ -76,7 +76,7 @@ exports[`Alert should be render some Alert components 1`] = `
     </div>
   </div>
   <div
-    class="sky-alert sky-alert-success sky-alert-show-icon sky-alert-no-title alertcss__AlertWrapper-sc-1m63gp0-0 hjrjVk"
+    class="sky-alert sky-alert-success sky-alert-show-icon sky-alert-no-title alertcss__AlertWrapper-sc-1m63gp0-0 iujTdz"
   >
     <div
       class="sky-alert-icon"
@@ -108,7 +108,7 @@ exports[`Alert should be render some Alert components 1`] = `
     </div>
   </div>
   <div
-    class="sky-alert sky-alert-info sky-alert-show-icon alertcss__AlertWrapper-sc-1m63gp0-0 hjrjVk"
+    class="sky-alert sky-alert-info sky-alert-show-icon alertcss__AlertWrapper-sc-1m63gp0-0 iujTdz"
   >
     <div
       class="sky-alert-icon"
@@ -181,7 +181,7 @@ exports[`Alert should be render some Alert components 1`] = `
 
 exports[`Alert should render custom icon when it's set icon 1`] = `
 <div
-  class="sky-alert sky-alert-info sky-alert-no-content sky-alert-no-title alertcss__AlertWrapper-sc-1m63gp0-0 hjrjVk"
+  class="sky-alert sky-alert-info sky-alert-no-content sky-alert-no-title alertcss__AlertWrapper-sc-1m63gp0-0 iujTdz"
 >
   <div
     class="sky-alert-container"
