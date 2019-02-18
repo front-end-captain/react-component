@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Timeline  1`] = `
+exports[`Timeline should render some Timeline components 1`] = `
 <div>
   <div
     class="sky-timeline-wrapper sky-timeline-wrapper-left timelinecss__TimelineWrapper-sc-1vumii2-0 BbkAW"
