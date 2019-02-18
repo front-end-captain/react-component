@@ -394,8 +394,10 @@ storiesOf("数据展示", module)
               </ExampleCard>
               <ExampleCard
                 className="demo-item-container-basic"
-                title="圈圈颜色"
-                description="圆圈颜色，绿色用于已完成、成功状态，红色表示告警或错误状态，蓝色可表示正在进行或其他默认状态。"
+                title="最后一个"
+                description="当任务状态正在发生，还在记录过程中，可用幽灵节点来表示当前的时间节点，
+                当 pending 为真值时展示幽灵节点，如果 pending 是 React 元素可用于定制该节点内容，
+                同时 pendingDot 将可以用于定制其轴点。"
               >
                 <Timeline pending="Recording...">
                   <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>

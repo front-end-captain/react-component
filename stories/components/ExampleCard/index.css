@@ -21,3 +21,7 @@
   display: inline-block;
   margin-bottom: 10px;
 }
+
+.example-card-wrapper .example-card-description-wrapper .example-card-description-content {
+  line-height: 2;
+}
