@@ -3,14 +3,19 @@
     [
       "@babel/preset-env",
       {
-        "modules": false
+        "modules": false,
+        "useBuiltIns": "usage",
       }
     ],
     "@babel/preset-react"
   ],
   "plugins": [
-    "@babel/plugin-transform-runtime",
-    "@babel/plugin-transform-modules-commonjs",
+    [
+       "@babel/plugin-transform-runtime",
+      {
+        "useESModules": true,
+      },
+    ],
     [
       "@babel/plugin-proposal-decorators",
       {

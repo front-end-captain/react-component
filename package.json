@@ -11,7 +11,9 @@
     "lint-staged": "lint-staged",
     "test": "jest --config jest.config.js",
     "test:update": "jest -u",
-    "format": "prettier --write ./components/**/*.js ./components/**/*.jsx"
+    "format": "prettier --write ./components/**/*.js ./components/**/*.jsx",
+    "build": "build-storybook -c .storybook -o .out",
+    "publish": "npm run build && storybook-to-ghpages --existing-output-dir=.out"
   },
   "lint-staged": {
     "**/*.{js,jsx}": [
@@ -37,8 +39,16 @@
   "homepage": "https://github.com/front-end-captain/react-component#readme",
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
     "@storybook/addon-options": "^4.1.11",
     "@storybook/react": "^4.1.4",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
