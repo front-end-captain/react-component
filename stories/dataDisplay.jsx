@@ -478,7 +478,7 @@ storiesOf("数据展示", module)
         <div className="tooltip-example-demo demo-wrapper">
           <h3>示例</h3>
           <div className="demo-container">
-            <ExampleCard title="基本" description="一个通用的日历面板，支持年/月切换。">
+            <ExampleCard title="基本" description="一个通用的日历面板，暂不支持年/月切换。">
               <Calendar
                 onSelect={(value) => console.log(value.toLocaleString())}
                 dateCellRender={(date) => (date.getDate() === 21 ? "custom content" : "")}
