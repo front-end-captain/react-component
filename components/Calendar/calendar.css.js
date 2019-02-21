@@ -61,8 +61,13 @@ const CalendarBodyWrapper = styled.div`
         }
       }
 
-      &.${(props) => props.prefixCls}-date-container-not-current-month,
-        &.${(props) => props.prefixCls}-date-disabled {
+      &.${(props) => props.prefixCls}-date-disabled {
+        .${(props) => props.prefixCls}-date-value {
+          color: rgba(0, 0, 0, 0.25) !important;
+        }
+      }
+
+      &.${(props) => props.prefixCls}-date-container-not-current-month {
         .${(props) => props.prefixCls}-date-value {
           color: rgba(0, 0, 0, 0.25) !important;
         }
