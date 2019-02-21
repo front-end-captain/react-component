@@ -10,15 +10,9 @@ describe("Calendar", () => {
       <div>
         <Calendar />
         <div style={{ width: 300, border: "1px solid #d9d9d9", borderRadius: 4 }}>
-          <Calendar
-            fullscreen={false}
-            onSelect={(value) => console.log(value.toLocaleString())}
-            onPanelChange={(value) => console.log(value.toLocaleString())}
-            disabledDate={(date) => date.getDate() === 10}
-          />
+          <Calendar fullscreen={false} disabledDate={(date) => date.getDate() === 10} />
         </div>
         <Calendar
-          onSelect={(value) => console.log(value.toLocaleString())}
           dateCellRender={(date) => (date.getDate() === 21 ? "custom content" : "")}
           disabledDate={(date) => date.getDate() === 12}
         />
