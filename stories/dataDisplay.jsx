@@ -7,6 +7,7 @@ import Badge from "./../components/Badge/index.js";
 import { InfoIcon, MessageIcon, DownIconFill } from "./../components/Icon/index.jsx";
 import Collapse from "./../components/Collapse/index.js";
 import Timeline from "./../components/Timeline/index.js";
+import Calendar from "./../components/Calendar/index.js";
 
 import ExampleCard from "./components/ExampleCard/index.jsx";
 import DynamicBadge from "./components/BadgeUsage/dynamicBadge.jsx";
@@ -463,6 +464,37 @@ storiesOf("数据展示", module)
                 </Timeline>
               </ExampleCard>
             </div>
+          </div>
+        </div>
+      </div>
+    );
+  })
+  .add("Calendar", () => {
+    return (
+      <div className="tooltip-example example-wrapper">
+        <div className="tooltip-example-header example-header">
+          <h1>Tooltip</h1>
+        </div>
+        <div className="tooltip-example-demo demo-wrapper">
+          <h3>示例</h3>
+          <div className="demo-container">
+            <ExampleCard title="基本" description="一个通用的日历面板，支持年/月切换。">
+              <Calendar
+                onSelect={(value) => console.log(value.toLocaleString())}
+                dateCellRender={(date) => (date.getDate() === 21 ? "custom content" : "")}
+                disabledDate={(date) => date.getDate() === 12}
+              />
+            </ExampleCard>
+            <ExampleCard title="卡片模式" description="用于嵌套在空间有限的容器中。">
+              <div style={{ width: 300, border: "1px solid #d9d9d9", borderRadius: 4 }}>
+                <Calendar
+                  fullscreen={false}
+                  onSelect={(value) => console.log(value.toLocaleString())}
+                  onPanelChange={(value) => console.log(value.toLocaleString())}
+                  disabledDate={(date) => date.getDate() === 10}
+                />
+              </div>
+            </ExampleCard>
           </div>
         </div>
       </div>
