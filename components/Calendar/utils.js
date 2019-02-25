@@ -33,26 +33,35 @@ const getDateData = (year, month) => {
   // 这里是确定上一个月有 30 天还是 31 天
   const lastDateOfPrevMonth = lastDayOfPrevMonth.getDate();
 
-  // ???
-  const preMonthDayCount = weekOfFirstDay - 1;
-
-  // 获取当月的最后一个
+  // 获取当月的最后一天
   const lastDayOfCurrentMonth = new Date(realYear, realMonth, 0);
   const lastDateOfCurrentMonth = lastDayOfCurrentMonth.getDate();
 
+  // 日历的第一行需要显示多少个上一月的日期
+  const prevMonthDayAmount = weekOfFirstDay - 1;
+
   let row = [];
   for (let i = 0; i < 7 * 6; i += 1) {
-    const date = i + 1 - preMonthDayCount;
-    let showDate = date;
+    // 6 * 7 中每一格所代表的日期 负数表示可能为上一月或者下一月的日期
+    const currentDate = i + 1 - prevMonthDayAmount;
+
+    // 表示当前这一格所代表的真实的日期
+    let realDate = currentDate;
     let currentMonth = realMonth;
 
-    if (date <= 0) {
+    // 当前这一格属于上一个月的日期
+    if (currentDate <= 0) {
       currentMonth = realMonth - 1;
-      showDate = lastDateOfPrevMonth + date;
-    } else if (date > lastDateOfCurrentMonth) {
-      currentMonth = realMonth + 1;
-      showDate = date - lastDateOfCurrentMonth;
+      realDate = lastDateOfPrevMonth + currentDate;
     }
+
+    // 当前这一格属于下一个月的日期
+    else if (currentDate > lastDateOfCurrentMonth) {
+      currentMonth = realMonth + 1;
+      realDate = currentDate - lastDateOfCurrentMonth;
+    }
+
+    // 上一年或者下一年
     if (currentMonth === 0) {
       realYear = prevYear;
       currentMonth = 12;
@@ -62,20 +71,20 @@ const getDateData = (year, month) => {
       realYear = nextYear;
     }
 
-    // 分组 6 * 7
+    // 分为 6 组，每一组 7 个
     if (i % 7 !== 6) {
       row.push({
         year: realYear,
-        date,
-        showDate,
+        date: currentDate,
+        showDate: realDate,
         month: currentMonth,
       });
     }
     if (i % 7 === 6) {
       row.push({
         year: realYear,
-        date,
-        showDate,
+        date: currentDate,
+        showDate: realDate,
         month: currentMonth,
       });
       ret.push(row);
