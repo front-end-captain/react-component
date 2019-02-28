@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tab /> should render some Tabs components 1`] = `
+<div>
+  <div
+    class="sky-tab-wrapper tabcss__TabsWrapper-t8bu7f-0 dNCAjj"
+  >
+    <div
+      class="tabcss__TabsHeaderWrapper-t8bu7f-1 yqnTT"
+    >
+      <div
+        class="sky-tab-nav sky-tab-nav-line"
+      >
+        <div
+          class="sky-tab-header-item sky-tab-header-item-active"
+        >
+          Tab 1
+        </div>
+        <div
+          class="sky-tab-header-item"
+        >
+          Tab 2
+        </div>
+        <div
+          class="sky-tab-header-item"
+        >
+          Tab 3
+        </div>
+        <div
+          class="sky-tab-ink-line"
+          style="width:0;transform:translate3d(0px, 0, 0)"
+        />
+      </div>
+    </div>
+    <div
+      class="tabcss__TabsPaneWrapper-t8bu7f-2 hCcAuF"
+      style="margin-left:-0%"
+    >
+      <div
+        class="sky-tab-pane-item sky-tab-pane-item-active"
+      >
+        Content of Tab Pane 1
+      </div>
+      <div
+        class="sky-tab-pane-item sky-tab-pane-item-inactive"
+      >
+        Content of Tab Pane 2
+      </div>
+      <div
+        class="sky-tab-pane-item sky-tab-pane-item-inactive"
+      >
+        Content of Tab Pane 3
+      </div>
+    </div>
+  </div>
+  <div
+    class="sky-tab-wrapper tabcss__TabsWrapper-t8bu7f-0 dNCAjj"
+  >
+    <div
+      class="tabcss__TabsHeaderWrapper-t8bu7f-1 yqnTT"
+    >
+      <div
+        class="sky-tab-nav sky-tab-nav-card"
+      >
+        <div
+          class="sky-tab-header-item"
+        >
+          Tab 1
+        </div>
+        <div
+          class="sky-tab-header-item sky-tab-header-item-active"
+        >
+          Tab 2
+        </div>
+        <div
+          class="sky-tab-header-item"
+        >
+          Tab 3
+        </div>
+        <div
+          class="sky-tab-ink-line"
+          style="width:0;transform:translate3d(0px, 0, 0)"
+        />
+      </div>
+    </div>
+    <div
+      class="tabcss__TabsPaneWrapper-t8bu7f-2 hCcAuF"
+      style="margin-left:-100%"
+    >
+      <div
+        class="sky-tab-pane-item sky-tab-pane-item-inactive"
+      >
+        Content of Tab Pane 1
+      </div>
+      <div
+        class="sky-tab-pane-item sky-tab-pane-item-active"
+      >
+        Content of Tab Pane 2
+      </div>
+      <div
+        class="sky-tab-pane-item sky-tab-pane-item-inactive"
+      >
+        Content of Tab Pane 3
+      </div>
+    </div>
+  </div>
+</div>
+`;

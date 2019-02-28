@@ -8,6 +8,7 @@ import { InfoIcon, MessageIcon, DownIconFill } from "./../components/Icon/index.
 import Collapse from "./../components/Collapse/index.js";
 import Timeline from "./../components/Timeline/index.js";
 import Calendar from "./../components/Calendar/index.js";
+import Tabs from "./../components/Tabs/index.js";
 
 import ExampleCard from "./components/ExampleCard/index.jsx";
 import DynamicBadge from "./components/BadgeUsage/dynamicBadge.jsx";
@@ -494,6 +495,77 @@ storiesOf("数据展示", module)
                   disabledDate={(date) => date.getDate() === 10}
                 />
               </div>
+            </ExampleCard>
+          </div>
+        </div>
+      </div>
+    );
+  })
+  .add("Tabs", () => {
+    const { TabPane } = Tabs;
+    return (
+      <div className="tabs-example example-wrapper">
+        <div className="tabs-example-header example-header">
+          <h1>Tabs 标签页</h1>
+        </div>
+        <div className="tabs-example-demo demo-wrapper">
+          <h3>示例</h3>
+          <div className="demo-container">
+            <ExampleCard title="基本" description="默认选中第一项。">
+              <Tabs
+                defaultActiveKey="1"
+                onChange={(key) => console.log(key)}
+                onTabClick={() => console.log("tab clicked")}
+              >
+                <TabPane tab="Tab 1" key="1">
+                  Content of Tab Pane 1
+                </TabPane>
+                <TabPane tab="Tab 2" key="2">
+                  Content of Tab Pane 2
+                </TabPane>
+                <TabPane tab="Tab 3" key="3">
+                  Content of Tab Pane 3
+                </TabPane>
+              </Tabs>
+            </ExampleCard>
+            <ExampleCard title="禁用" description="禁用某一项">
+              <Tabs defaultActiveKey="2">
+                <TabPane tab="Tab 1" key="1">
+                  Content of Tab Pane 1
+                </TabPane>
+                <TabPane tab="Tab 2" key="2" disabled>
+                  Content of Tab Pane 2
+                </TabPane>
+                <TabPane tab="Tab 3" key="3">
+                  Content of Tab Pane 3
+                </TabPane>
+              </Tabs>
+            </ExampleCard>
+            <ExampleCard title="卡片式页签" description="可以设置 `type=card` 换成另外一种卡片样式">
+              <Tabs defaultActiveKey="2" type="card">
+                <TabPane tab="Tab 1" key="1">
+                  Content of Tab Pane 1
+                </TabPane>
+                <TabPane tab="Tab 2" key="2">
+                  Content of Tab Pane 2
+                </TabPane>
+                <TabPane tab="Tab 3" key="3">
+                  Content of Tab Pane 3
+                </TabPane>
+              </Tabs>
+            </ExampleCard>
+            <ExampleCard title="附加内容" description="可以在页签右边添加附加内容">
+              <Tabs defaultActiveKey="1" tabBarExtraContent={<Button>Extra Action</Button>}>
+                <TabPane tab="Tab 1" key="1">
+                  Content of Tab Pane 1
+                </TabPane>
+                <TabPane tab="Tab 2" key="2">
+                  Content of Tab Pane 2
+                </TabPane>
+                <TabPane tab="Tab 3" key="3">
+                  Content of Tab Pane 3
+                </TabPane>
+              </Tabs>
             </ExampleCard>
           </div>
         </div>

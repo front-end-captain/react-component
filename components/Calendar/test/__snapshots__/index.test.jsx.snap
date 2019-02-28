@@ -176,7 +176,7 @@ exports[`Calendar should render some calendars 1`] = `
       </select>
     </div>
     <div
-      class="sky-calender-body sky-calender-body-fullscreen calendarcss__CalendarBodyWrapper-iomtlr-1 edIEVw"
+      class="sky-calender-body sky-calender-body-fullscreen calendarcss__CalendarBodyWrapper-iomtlr-1 gGPsaP"
     >
       <table
         class="sky-calender-table"
@@ -576,7 +576,7 @@ exports[`Calendar should render some calendars 1`] = `
             </td>
             <td>
               <div
-                class="sky-calender-date-container sky-calender-date-selected-day sky-calender-date-today"
+                class="sky-calender-date-container"
               >
                 <div
                   class="sky-calender-date-value"
@@ -683,7 +683,7 @@ exports[`Calendar should render some calendars 1`] = `
             </td>
             <td>
               <div
-                class="sky-calender-date-container"
+                class="sky-calender-date-container sky-calender-date-selected-day sky-calender-date-today"
               >
                 <div
                   class="sky-calender-date-value"
@@ -1030,7 +1030,7 @@ exports[`Calendar should render some calendars 1`] = `
         </select>
       </div>
       <div
-        class="sky-calender-body calendarcss__CalendarBodyWrapper-iomtlr-1 edIEVw"
+        class="sky-calender-body calendarcss__CalendarBodyWrapper-iomtlr-1 gGPsaP"
       >
         <table
           class="sky-calender-table"
@@ -1430,7 +1430,7 @@ exports[`Calendar should render some calendars 1`] = `
               </td>
               <td>
                 <div
-                  class="sky-calender-date-container sky-calender-date-selected-day sky-calender-date-today"
+                  class="sky-calender-date-container"
                 >
                   <div
                     class="sky-calender-date-value"
@@ -1537,7 +1537,7 @@ exports[`Calendar should render some calendars 1`] = `
               </td>
               <td>
                 <div
-                  class="sky-calender-date-container"
+                  class="sky-calender-date-container sky-calender-date-selected-day sky-calender-date-today"
                 >
                   <div
                     class="sky-calender-date-value"
@@ -1882,7 +1882,7 @@ exports[`Calendar should render some calendars 1`] = `
       </select>
     </div>
     <div
-      class="sky-calender-body sky-calender-body-fullscreen calendarcss__CalendarBodyWrapper-iomtlr-1 edIEVw"
+      class="sky-calender-body sky-calender-body-fullscreen calendarcss__CalendarBodyWrapper-iomtlr-1 gGPsaP"
     >
       <table
         class="sky-calender-table"
@@ -2282,7 +2282,7 @@ exports[`Calendar should render some calendars 1`] = `
             </td>
             <td>
               <div
-                class="sky-calender-date-container sky-calender-date-selected-day sky-calender-date-today"
+                class="sky-calender-date-container"
               >
                 <div
                   class="sky-calender-date-value"
@@ -2391,7 +2391,7 @@ exports[`Calendar should render some calendars 1`] = `
             </td>
             <td>
               <div
-                class="sky-calender-date-container"
+                class="sky-calender-date-container sky-calender-date-selected-day sky-calender-date-today"
               >
                 <div
                   class="sky-calender-date-value"
