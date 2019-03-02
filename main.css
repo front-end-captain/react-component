@@ -1,0 +1,89 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "PingFangSC-Regular", "STHeitiSC-Light", "Helvetica-Light", arial, sans-serif, "Droid Sans Fallback";
+  font-size: 14px;
+  -webkit-tap-highlight-color: transparent;
+  background: #ffffff;
+  overflow: auto;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.example-card-wrapper {
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.example-card-wrapper .example-card-content {
+  padding: 10px 5px 20px 5px;
+}
+
+.example-card-wrapper .example-card-description-wrapper {
+  padding: 10px;
+}
+
+.example-card-wrapper .example-card-description-wrapper .example-card-description-title {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #d9d9d9;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.example-card-wrapper .example-card-description-wrapper .example-card-description-content {
+  line-height: 2;
+}
+
+.example-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          -webkit-flex-direction: column;
+          flex-direction: column;
+  padding: 0 22px;
+}
+
+.demo-container {
+  overflow: hidden;
+}
+
+.demo-container-left,
+.demo-container-right {
+  width: 45%;
+}
+
+.demo-container-left {
+  float: left;
+}
+
+.demo-container-right {
+  float: right;
+}
+
+[class*="demo-item-container-"] .sky-btn {
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+.badge-example-placeholder {
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  background: #eee;
+  display: inline-block;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
