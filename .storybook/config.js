@@ -7,6 +7,7 @@ import "./basic.css";
 
 function loadStories() {
   require("./../stories/general.jsx");
+  require("./../stories/navigation.jsx");
   require("./../stories/dataDisplay.jsx");
   require("./../stories/feedback.jsx");
 }

@@ -1,0 +1,500 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination should render some Pagination components 1`] = `
+<div>
+  <ul
+    class="sky-pagination-wrapper paginationcss__PaginationWrapper-vesd20-0 fOSaqI"
+  >
+    <li
+      class="sky-pagination-item sky-pagination-item-prev sky-pagination-item-disabled"
+      title="上一页"
+    >
+      <a>
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <polyline
+            points="15 18 9 12 15 6"
+          />
+        </svg>
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-1 sky-pagination-item-selected"
+      title="1"
+    >
+      <a>
+        1
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-2"
+      title="2"
+    >
+      <a>
+        2
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-3"
+      title="3"
+    >
+      <a>
+        3
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-4"
+      title="4"
+    >
+      <a>
+        4
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-5"
+      title="5"
+    >
+      <a>
+        5
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-6"
+      title="6"
+    >
+      <a>
+        6
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-7"
+      title="7"
+    >
+      <a>
+        7
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-8"
+      title="8"
+    >
+      <a>
+        8
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-9"
+      title="9"
+    >
+      <a>
+        9
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-next"
+      title="下一页"
+    >
+      <a>
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <polyline
+            points="9 18 15 12 9 6"
+          />
+        </svg>
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="sky-pagination-wrapper paginationcss__PaginationWrapper-vesd20-0 fOSaqI"
+  >
+    <li
+      class="sky-pagination-item sky-pagination-item-prev"
+      title="上一页"
+    >
+      <a>
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <polyline
+            points="15 18 9 12 15 6"
+          />
+        </svg>
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-1"
+      title="1"
+    >
+      <a>
+        1
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-jump"
+      title="向前5页"
+    >
+      <a>
+        <span
+          class="sky-pagination-item-ellipsis"
+        >
+          ···
+        </span>
+        <span
+          class="sky-pagination-item-jump-arrow"
+        >
+          &lt;&lt;
+        </span>
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-5"
+      title="5"
+    >
+      <a>
+        5
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-6"
+      title="6"
+    >
+      <a>
+        6
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-7 sky-pagination-item-selected"
+      title="7"
+    >
+      <a>
+        7
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-8"
+      title="8"
+    >
+      <a>
+        8
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-9"
+      title="9"
+    >
+      <a>
+        9
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-jump"
+      title="向后5页"
+    >
+      <a>
+        <span
+          class="sky-pagination-item-ellipsis"
+        >
+          ···
+        </span>
+        <span
+          class="sky-pagination-item-jump-arrow"
+        >
+          &gt;&gt;
+        </span>
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-1000"
+      title="1000"
+    >
+      <a>
+        1000
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-next"
+      title="下一页"
+    >
+      <a>
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <polyline
+            points="9 18 15 12 9 6"
+          />
+        </svg>
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="sky-pagination-wrapper paginationcss__PaginationWrapper-vesd20-0 fOSaqI"
+  >
+    <li
+      class="sky-pagination-item sky-pagination-item-total"
+    >
+      1-10 of 400 items
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-prev sky-pagination-item-disabled"
+      title="上一页"
+    >
+      <a>
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <polyline
+            points="15 18 9 12 15 6"
+          />
+        </svg>
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-1 sky-pagination-item-selected"
+      title="1"
+    >
+      <a>
+        1
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-2"
+      title="2"
+    >
+      <a>
+        2
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-3"
+      title="3"
+    >
+      <a>
+        3
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-4"
+      title="4"
+    >
+      <a>
+        4
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-5"
+      title="5"
+    >
+      <a>
+        5
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-jump"
+      title="向后5页"
+    >
+      <a>
+        <span
+          class="sky-pagination-item-ellipsis"
+        >
+          ···
+        </span>
+        <span
+          class="sky-pagination-item-jump-arrow"
+        >
+          &gt;&gt;
+        </span>
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-40"
+      title="40"
+    >
+      <a>
+        40
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-next"
+      title="下一页"
+    >
+      <a>
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <polyline
+            points="9 18 15 12 9 6"
+          />
+        </svg>
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="sky-pagination-wrapper paginationcss__PaginationWrapper-vesd20-0 fOSaqI"
+  >
+    <li
+      class="sky-pagination-item sky-pagination-item-prev sky-pagination-item-disabled"
+      title="上一页"
+    >
+      <a>
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <polyline
+            points="15 18 9 12 15 6"
+          />
+        </svg>
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-1 sky-pagination-item-selected"
+      title="1"
+    >
+      <a>
+        1
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-2"
+      title="2"
+    >
+      <a>
+        2
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-3"
+      title="3"
+    >
+      <a>
+        3
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-4"
+      title="4"
+    >
+      <a>
+        4
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-5"
+      title="5"
+    >
+      <a>
+        5
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-jump"
+      title="向后5页"
+    >
+      <a>
+        <span
+          class="sky-pagination-item-ellipsis"
+        >
+          ···
+        </span>
+        <span
+          class="sky-pagination-item-jump-arrow"
+        >
+          &gt;&gt;
+        </span>
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-200"
+      title="200"
+    >
+      <a>
+        200
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-next"
+      title="下一页"
+    >
+      <a>
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <polyline
+            points="9 18 15 12 9 6"
+          />
+        </svg>
+      </a>
+    </li>
+    <li
+      class="sky-pagination-item sky-pagination-item-quick-jumper"
+    >
+      <span>
+        跳至
+      </span>
+      <input
+        type="text"
+      />
+      <span>
+        页
+      </span>
+    </li>
+  </ul>
+</div>
+`;

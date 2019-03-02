@@ -6,7 +6,7 @@ exports[`<Tab /> should render some Tabs components 1`] = `
     class="sky-tab-wrapper tabcss__TabsWrapper-t8bu7f-0 dNCAjj"
   >
     <div
-      class="tabcss__TabsHeaderWrapper-t8bu7f-1 yqnTT"
+      class="tabcss__TabsHeaderWrapper-t8bu7f-1 hPfwkj"
     >
       <div
         class="sky-tab-nav sky-tab-nav-line"
@@ -57,7 +57,7 @@ exports[`<Tab /> should render some Tabs components 1`] = `
     class="sky-tab-wrapper tabcss__TabsWrapper-t8bu7f-0 dNCAjj"
   >
     <div
-      class="tabcss__TabsHeaderWrapper-t8bu7f-1 yqnTT"
+      class="tabcss__TabsHeaderWrapper-t8bu7f-1 hPfwkj"
     >
       <div
         class="sky-tab-nav sky-tab-nav-card"

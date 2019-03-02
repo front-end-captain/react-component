@@ -78,7 +78,7 @@
     "postcss-loader": "^3.0.0",
     "postcss-url": "^8.0.0",
     "power-assert": "^1.6.1",
-    "prettier": "^1.15.3",
+    "prettier": "^1.16.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "scroll-into-view-if-needed": "^2.2.20",

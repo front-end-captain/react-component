@@ -1,3 +1,5 @@
+/* stylelint-disable declaration-colon-newline-after */
+/* stylelint-disable indentation */
 import styled from "styled-components";
 
 const TabsWrapper = styled.div`
