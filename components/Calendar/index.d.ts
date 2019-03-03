@@ -64,4 +64,4 @@ export interface CalendarState {
   // mode?: CalendarMode;
 }
 
-export default class Calendar extends React.Component<CalendarProps, CalendarState> {};
+export default class Calendar extends React.Component<CalendarProps, CalendarState> {}

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const PagerType = "page" | "prev" | "next" | "jumper-prev" | "jumper-next";
+declare type PagerType = "page" | "prev" | "next" | "jumper-prev" | "jumper-next";
 
 export interface PaginationProps {
   // 当前那一页
